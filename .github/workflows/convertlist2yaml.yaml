@@ -1,0 +1,96 @@
+name: Convert-Clash-classic-ruleset
+on:
+  workflow_run:
+    workflows: [rule-update]
+    types:
+      - completed
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: Convert rules
+        run: |
+          set -e
+          INPUT_ROOT="rules"
+          OUTPUT_ROOT="clash-classic"
+          # --- 排除文件列表 (相对于 INPUT_ROOT) ---
+          EXCLUDE_FILES=(
+            "app/GameDLCN.MANUAL.list"
+            "MyDirect.SERVER.list"
+          )
+          # --- 排除行前缀 ---
+          EXCLUDE_PREFIXES=(
+            "USER-AGENT,"
+            "URL-REGEX,"
+          )
+
+          echo "Starting rule conversion..."
+          declare -A exclude_map
+          for excluded_file_rel in "${EXCLUDE_FILES[@]}"; do
+            exclude_map["$INPUT_ROOT/$excluded_file_rel"]=1
+          done
+
+          exclude_regex=""
+          if [ ${#EXCLUDE_PREFIXES[@]} -gt 0 ]; then
+            exclude_regex="^("
+            first=true
+            for prefix in "${EXCLUDE_PREFIXES[@]}"; do
+              escaped_prefix=$(sed 's/[][()\.^$?*+|]/\\&/g' <<< "$prefix")
+              if $first; then
+                exclude_regex+="$escaped_prefix"
+                first=false
+              else
+                exclude_regex+="|$escaped_prefix"
+              fi
+            done
+            exclude_regex+=")"
+          fi
+          find "$INPUT_ROOT" -type f -name "*.list" -print0 | while IFS= read -r -d $'\0' input_file; do
+            if [[ -v exclude_map["$input_file"] ]]; then
+              echo "Skipping excluded file: $input_file"
+              continue
+            fi
+
+            relative_path="${input_file#$INPUT_ROOT/}"
+            output_file="${relative_path%.list}.yaml"
+            output_path="$OUTPUT_ROOT/$output_file"
+
+            mkdir -p "$(dirname "$output_path")"
+
+            {
+              echo "payload:"
+              awk -v pattern="$exclude_regex" '
+              { gsub(/^[[:space:]]+|[[:space:]]+$/, "", $0) }
+              NF == 0 || /^\s*#/ { next }
+              pattern != "" && $0 ~ pattern { next }
+              { print " - " $0 }
+              ' "$input_file"
+            } > "$output_path"
+            echo "Converted: $input_file -> $output_path"
+          done
+          echo "Conversion finished."
+
+      - name: Commit and Push
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Convert rules to Clash Classic"
+          git pull --rebase origin main
+          git push

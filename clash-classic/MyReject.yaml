@@ -1,0 +1,5 @@
+payload:
+ - AND,((NETWORK,UDP),(AND,((DST-PORT,443),(GEOSITE,youtube))))
+ - AND,((DST-PORT,443),(AND,(NETWORK,UDP),(NOT,((GEOIP,cn)))))
+ - AND,((NETWORK,UDP),(AND,((DST-PORT,443),(GEOSITE,bilibili))))
+ - AND,((NETWORK,UDP),(AND,((DST-PORT,3478),(GEOSITE,bilibili))))

@@ -1,0 +1,29 @@
+# Claude其他
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-KEYWORD,claudeusercontent
+PROCESS-NAME,com.anthropic.claude
+# ChatGPT其他
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,gpt-oss.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sora.com
+PROCESS-NAME,com.openai.chatgpt
+PROCESS-NAME,com.openai.sora
+# X.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+PROCESS-NAME,ai.x.grok
+# perplexity
+DOMAIN-SUFFIX,perplexity.ai
+PROCESS-NAME,ai.perplexity.app.android
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
+# other
+DOMAIN-SUFFIX,llmsresearch.com
+DOMAIN-SUFFIX,epdg.epc.mnc240.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.com

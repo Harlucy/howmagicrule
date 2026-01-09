@@ -1,0 +1,321 @@
+# 常用CN应用直连列表
+# 进程规则
+# 社交
+# QQ
+# PROCESS-NAME,com.tencent.mobileqq
+# QQ空间
+PROCESS-NAME,com.qzone
+# 微信
+# PROCESS-NAME,com.tencent.mm
+# 探探
+PROCESS-NAME,com.p1.mobile.putong
+# 陌陌
+PROCESS-NAME,com.immomo.momo
+
+# 购物
+# 淘宝
+PROCESS-NAME,com.taobao.taobao
+# 京东
+PROCESS-NAME,com.jingdong.app.mall
+# 拼多多
+PROCESS-NAME,com.xunmeng.pinduoduo
+# 美团
+PROCESS-NAME,com.sankuai.meituan
+# 苏宁易购
+PROCESS-NAME,com.suning.mobile.ebuy
+# 咸鱼
+PROCESS-NAME,com.taobao.idlefish
+# 每日优鲜
+PROCESS-NAME,cn.missfresh.application
+# 什么值得买
+PROCESS-NAME,com.smzdm.client.android
+# 1688阿里巴巴
+PROCESS-NAME,com.alibaba.wireless
+# 转转
+PROCESS-NAME,com.wuba.zhuanzhuan
+# 菜鸟裹裹
+PROCESS-NAME,com.cainiao.wireless
+
+# 阅读
+# QQ阅读
+PROCESS-NAME,com.qq.reader
+# 微信读书
+PROCESS-NAME,com.tencent.weread
+# 掌阅
+PROCESS-NAME,com.chaozh.iReaderFree
+# 番茄免费小说
+PROCESS-NAME,com.dragon.read
+# 晋江小说
+PROCESS-NAME,com.jjwxc.reader
+
+# 新闻
+# 今日头条
+PROCESS-NAME,com.ss.android.article.news
+# 新浪微博
+PROCESS-NAME,com.sina.weibo
+# 网易新闻
+PROCESS-NAME,com.netease.newsreader.activity
+# 搜狐新闻
+PROCESS-NAME,com.sohu.newsclient
+# IT之家
+PROCESS-NAME,com.ruanmei.ithome
+
+# 视频
+# 抖音短视频
+PROCESS-NAME,com.ss.android.ugc.aweme
+# 快手
+PROCESS-NAME,com.smile.gifmaker
+# 火山小视频
+PROCESS-NAME,com.ss.android.ugc.live
+# 秒拍
+PROCESS-NAME,com.yixia.videoeditor
+# 优酷
+PROCESS-NAME,com.youku.phone
+# 爱奇艺
+PROCESS-NAME,com.qiyi.video
+# 腾讯视频
+PROCESS-NAME,com.tencent.qqlive
+# 斗鱼直播
+PROCESS-NAME,air.tv.douyu.android
+# 熊猫直播
+PROCESS-NAME,com.panda.videoliveplatform
+
+# 旅游
+# 携程
+PROCESS-NAME,ctrip.android.view
+# 去哪儿旅行
+PROCESS-NAME,com.Qunar
+# 飞猪
+PROCESS-NAME,com.taobao.trip
+# 艺龙旅行
+PROCESS-NAME,com.dp.android.elong
+# 途牛旅游
+PROCESS-NAME,com.tuniu.app.ui
+
+# 拍照
+# 美图秀秀
+PROCESS-NAME,com.mt.mtxx.mtxx
+# 美颜相机
+PROCESS-NAME,com.meitu.meiyancamera
+# 美拍
+PROCESS-NAME,com.meitu.meipaimv
+
+# 金融
+# 支付宝
+PROCESS-NAME,com.eg.android.AlipayGphone
+# 百度钱包
+PROCESS-NAME,com.baidu.wallet
+# 京东钱包
+PROCESS-NAME,com.wangyin.payment
+# 招商银行
+PROCESS-NAME,cmb.pb
+PROCESS-NAME,com.cmbchina.ccd.pluto.cmbActivity
+# 中国银行
+PROCESS-NAME,com.chinamworld.bocmbci
+PROCESS-NAME,com.forms
+# 建设银行
+PROCESS-NAME,com.chinamworld.main
+# 东方财富
+PROCESS-NAME,com.eastmoney.android.berlin
+# 威海银行
+PROCESS-NAME,com.iss.weihaibank
+# 京东金融
+PROCESS-NAME,com.jd.jrapp
+# VIVO钱包
+PROCESS-NAME,com.vivo.wallet
+PROCESS-NAME,com.unionpay.tsmservice
+
+# 美食
+# 美团外卖
+PROCESS-NAME,com.sankuai.meituan.takeoutnew
+# 饿了么
+PROCESS-NAME,me.ele
+# 大众点评
+PROCESS-NAME,com.dianping.v1
+
+# 输入法
+# 讯飞输入法
+PROCESS-NAME,com.iflytek.inputmethod
+# 百度输入法
+PROCESS-NAME,com.baidu.input
+PROCESS-NAME,com.baidu.input_vivo
+# 搜狗输入法
+PROCESS-NAME,com.sohu.inputmethod.sogou
+
+# 地图
+# 百度地图
+PROCESS-NAME,com.baidu.BaiduMap
+# 高德地图
+PROCESS-NAME,com.autonavi.minimap
+# 谷歌地图
+PROCESS-NAME,com.google.android.apps.maps
+
+# 出行
+# 摩拜单车
+PROCESS-NAME,com.mobike.mobikeapp
+# OFO单车
+PROCESS-NAME,so.ofo.labofo
+# 滴滴出行
+PROCESS-NAME,com.sdu.didi.psnger
+# 12306
+PROCESS-NAME,battymole.trainticket
+PROCESS-NAME,com.MobileTicket
+# 航班管家
+PROCESS-NAME,com.flightmanager.view
+
+# 论坛
+# 简书
+PROCESS-NAME,com.jianshu.haruki
+# 知乎
+PROCESS-NAME,com.zhihu.android
+# 得到
+PROCESS-NAME,com.luojilab.player
+# 小红书
+PROCESS-NAME,com.xingin.xhs
+
+# 音乐
+# QQ音乐
+PROCESS-NAME,com.tencent.qqmusic
+# 酷狗
+PROCESS-NAME,com.kugou.android
+PROCESS-NAME,com.kugou.android.lite
+# 全民K歌
+PROCESS-NAME,com.tencent.karaoke
+# 酷我
+PROCESS-NAME,cn.kuwo.player
+# 虾米
+PROCESS-NAME,fm.xiami.main
+# 唱吧
+PROCESS-NAME,com.changba
+# 网易云音乐
+PROCESS-NAME,com.netease.cloudmusic
+# 喜马拉雅
+PROCESS-NAME,com.ximalaya.ting.android
+
+# 游戏
+# 王者荣耀
+PROCESS-NAME,com.tencent.tmgp.sgame
+# wegame相关
+PROCESS-NAME,wegame.exe
+PROCESS-NAME,TinyDL.exe
+# 掌上无畏契约
+PROCESS-NAME,com.tencent.apps.valorant
+
+# 其他
+# 百度车载组件
+PROCESS-NAME,com.baidu.carlife.vivo
+# VIVO套件
+PROCESS-NAME,pcsuite.exe
+PROCESS-NAME,pcsuite Helper
+PROCESS-NAME,com.vivo.pcsuite
+PROCESS-NAME,com.vivo.connbase
+PROCESS-NAME,com.vivo.vhome
+# VIVO蓝心小V
+PROCESS-NAME,com.vivo.ai.copilot
+PROCESS-NAME,com.vivo.ai.base.copilot
+# VIVO蓝心小V组件
+PROCESS-NAME,com.vivo.launchercopilot
+# VIVO开机引导
+PROCESS-NAME,com.vivo.setupwizard
+# VIVO电源信息
+PROCESS-NAME,com.vivo.fuelsummary
+# VIVO售后服务
+PROCESS-NAME,com.vos.as.vit
+# VIVO多任务
+PROCESS-NAME,com.vivo.smartmultiwindow
+# CCFLink
+PROCESS-NAME,com.alibaba.android.rimet.ccflink
+# VIVO推送
+PROCESS-NAME,com.vivo.pushservice
+# VIVO互传
+PROCESS-NAME,com.vivo.easyshare
+# VIVO智慧引擎
+PROCESS-NAME,com.vivo.abe
+# VIVO健康关怀
+PROCESS-NAME,com.vivo.widget.healthcare
+# VIVO输入法
+PROCESS-NAME,com.vivo.ai.ime.nex
+# VIVO免费小说
+PROCESS-NAME,com.vivo.browser.novel.widget
+# VIVO摄影
+PROCESS-NAME,com.vivo.symmetry
+# VIVO体验评价
+PROCESS-NAME,com.vivo.nps
+# VIVO移动服务
+PROCESS-NAME,com.vivo.vms
+# VIVO文档
+PROCESS-NAME,com.vivo.smartoffice
+# VIVO健康
+PROCESS-NAME,com.vivo.health
+# 中国联通
+PROCESS-NAME,com.sinovatech.unicom.ui
+# 中国广电
+PROCESS-NAME,com.ai.obc.cbn.app
+# 个人所得税
+PROCESS-NAME,cn.gov.tax.its
+# 航旅纵横
+PROCESS-NAME,com.umetrip.android.msky.app
+# 涂鸦智能
+PROCESS-NAME,com.tuya.smartiot
+# 网易有道词典
+PROCESS-NAME,com.youdao.dict
+# 华住会
+PROCESS-NAME,com.htinns
+# 腾讯会议
+PROCESS-NAME,com.tencent.wemeet.app
+# 爱山东
+PROCESS-NAME,com.hanweb.android.sdzwfw.activity
+# 蓝心小V
+PROCESS-NAME,com.vivo.ai.base.copilot
+# 米家
+PROCESS-NAME,com.xiaomi.smarthome
+# 中国电信
+PROCESS-NAME,com.ct.client
+# WPS Office
+PROCESS-NAME,cn.wps.moffice_eng
+# ......
+PROCESS-NAME,com.zhiliaoapp.musically
+PROCESS-NAME,com.xiaomi.mibrain.speech
+PROCESS-NAME,小米云服务.exe
+PROCESS-NAME,Thunder
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,com.qiyi.video
+PROCESS-NAME,com.bbk.launcher2
+PROCESS-NAME,com.bbk.lite.theme
+PROCESS-NAME,com.vivo.faceunlock
+PROCESS-NAME,com.vivo.base.player
+PROCESS-NAME,com.vivo.networkstate
+PROCESS-NAME,com.vivo.magazine
+PROCESS-NAME,com.vivo.livewallpaper.behaviorskylight
+PROCESS-NAME,com.vivo.devicereg
+PROCESS-NAME,com.vivo.familycare.local
+PROCESS-NAME,com.iqoo.secure
+PROCESS-NAME,com.vivo.base.vtouch
+PROCESS-NAME,com.vivo.globalsearch
+PROCESS-NAME,com.bbk.iqoo.logsystem
+PROCESS-NAME,com.vivo.video.widget
+PROCESS-NAME,com.vivo.SmartKey
+PROCESS-NAME,com.vivo.suggestion
+PROCESS-NAME,com.vivo.ese.widget
+PROCESS-NAME,com.vivo.basemanager
+PROCESS-NAME,com.vivo.android.wifi.mainline.common.resources.overlay
+PROCESS-NAME,com.bbk.facewake
+PROCESS-NAME,com.vivo.newsreader
+PROCESS-NAME,com.vivo.faceui
+PROCESS-NAME,com.bbk.photoframewidget
+PROCESS-NAME,com.vivo.alphacamera
+PROCESS-NAME,com.vivo.vdfs
+PROCESS-NAME,com.vivo.game
+PROCESS-NAME,com.vivo.e2ee
+PROCESS-NAME,com.vivo.card
+PROCESS-NAME,com.vivo.globalanimation
+PROCESS-NAME,com.vivo.screenreader
+PROCESS-NAME,com.vivo.voicewakeup
+PROCESS-NAME,com.vivo.aiservice
+PROCESS-NAME,com.vivo.aiengine
+PROCESS-NAME,com.android.bbkmusic
+PROCESS-NAME,com.vivo.gallery.sharedId
+PROCESS-NAME,com.vivo.space
+PROCESS-NAME,com.vivo.safecenter
+PROCESS-NAME,com.vlife.vivo.wallpaper
+PROCESS-NAME,com.htinns

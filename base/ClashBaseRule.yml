@@ -1,0 +1,377 @@
+port: 53710
+socks-port: 53211
+redir-port: 53712
+tproxy-port: 53713
+mixed-port: 53714
+allow-lan: false
+bind-address: "*"
+ipv6: true
+external-controller: 0.0.0.0:9090
+secret: "zQ!h90n@BBp"
+mode: rule
+log-level: info
+global-client-fingerprint: firefox
+global-ua: mymihomo
+tcp-concurrent: true
+unified-delay: false
+keep-alive-interval: 15
+keep-alive-idle: 180
+geodata-mode: true
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 12
+geosite-matcher: succinct
+geox-url: # Geo 数据库配置，用于地理位置和 ASN 匹配
+  geoip: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat" # GeoIP 数据库
+  geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat" # GeoSite 数据库
+  mmdb: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb" # Country mmdb 数据库
+  asn: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb" # ASN 数据库
+tun:
+  enable: true
+  stack: gvisor
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
+  strict-route: true
+  mtu: 1408
+  gso: true
+  gso-max-size: 65536
+  udp-timeout: 300
+  endpoint-independent-nat: true
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  route-exclude-address:
+    - 192.168.191.0/24
+    - 192.168.192.0/24
+    - 10.10.10.0/24
+    - 100.64.0.0/10
+    - 10.0.0.0/24
+    - 10.14.14.0/24
+    - 10.14.12.0/24
+dns:
+  enable: true
+  ipv6: true
+  cache-algorithm: lru
+  prefer-h3: true
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  nameserver-policy:
+    'geosite:googlefcm': 
+      - https://doh.pub/dns-query
+      - https://doh.360.cn
+      - https://dns.alidns.com/dns-query
+    '+.aliyuncs.com': 
+      - https://doh.pub/dns-query
+      - https://doh.360.cn
+      - https://dns.alidns.com/dns-query
+    'geosite:cn': 
+      - 202.102.152.3
+      - 119.29.29.29
+      - 123.125.81.6
+      - 101.226.4.6
+    'geosite:gfw': 
+      - https://doh.opendns.com/dns-query#Proxy
+      - https://1.1.1.1/dns-query#Proxy
+      - https://8.8.8.8/dns-query#Proxy
+      - https://[2001:4860:4860::64]/dns-query#Proxy
+  default-nameserver:
+    - 202.102.152.3
+    - 119.29.29.29
+    - 123.125.81.6
+    - 101.226.4.6
+  direct-nameserver:
+    - 202.102.152.3
+    - 119.29.29.29
+    - 123.125.81.6
+    - 101.226.4.6
+  direct-nameserver-follow-policy: false
+  nameserver:
+    - 202.102.152.3
+    - 119.29.29.29
+    - 123.125.81.6
+    - 101.226.4.6
+  proxy-server-nameserver:
+    - 114.114.114.114
+    - 202.102.152.3
+    - https://doh.pub/dns-query
+    - https://1.1.1.1/dns-query#Proxy
+  fallback:
+    - https://doh.opendns.com/dns-query#Proxy
+    - https://1.1.1.1/dns-query#Proxy
+    - https://8.8.8.8/dns-query#Proxy
+    - https://[2001:4860:4860::64]/dns-query#Proxy
+  fallback-filter:
+    geoip: false
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
+      - 93.46.8.90/32
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-range6: fdfe:dcba:9876::1/64
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*.*.*'
+    - '*.lan'
+    - '*.local'
+    - '*.localdomain'
+    - '*.localhost'
+    - '+.battlenet.com.cn'
+    - '+.cfprefer1.xyz'
+    - '+.cmbchina.com'
+    - '+.cmbimg.com'
+    - '+.cmpassport.com'
+    - '+.henzanapp.com'
+    - '+.kuxueyun.com'
+    - '+.logon.battle.net'
+    - '+.logon.battlenet.com.cn'
+    - '+.media.dssott.com'
+    - '+.mediatek.com'
+    - '+.mi.com'
+    - '+.mijia.tech'
+    - '+.miwifi.com'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.music.163.com'
+    - '+.music.migu.cn'
+    - '+.n0808.com'
+    - '+.ntp.org'
+    - '+.pconline.com.cn'
+    - '+.pingan.com.cn'
+    - '+.pool.ntp.org'
+    - '+.push.apple.com'
+    - '+.qq.com'
+    - '+.sandai.net'
+    - '+.services.googleapis.cn'
+    - '+.srv.nintendo.net'
+    - '+.steamcontent.com'
+    - '+.stun.playstation.net'
+    - '+.tencent.com'
+    - '+.u-tools.cn'
+    - '+.wargaming.net'
+    - '+.wechat.com'
+    - '+.weixin.qq.com'
+    - '+.wetab.link'
+    - '+.wggames.cn'
+    - '+.wopsmail.net'
+    - '+.wpsmail.net'
+    - '+.wotgame.cn'
+    - '+.wowsgame.cn'
+    - '+.xiaomi.net'
+    - '+.xn--ngstr-lra8j.cn'
+    - '+.y.qq.com'
+    - '*.*.xboxlive.com'
+    - '*.126.net'
+    - '*.example'
+    - '*.ff14.sdo.com'
+    - '*.ffxiv.com'
+    - '*.finalfantasyxiv.com'
+    - '*.home.arpa'
+    - '*.invalid'
+    - '*.kuwo.cn'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - '*.mcdn.bilivideo.cn'
+    - '*.microsoftonline.com'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - '*.n.n.srv.nintendo.net'
+    - '*.ntp.org.*'
+    - '*.ntp.org.cn'
+    - '*.router.asus.com'
+    - '*.square-enix.com'
+    - '*.steamcontent.com'
+    - '*.test'
+    - '*.time.edu.cn'
+    - '*.xiami.com'
+    - 'amobile.music.tc.qq.com'
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'aqqmusic.tc.qq.com'
+    - 'connect.rom.miui.com'
+    - 'dl.stream.qqmusic.qq.com'
+    - 'ff.dorado.sdo.com'
+    - 'heartbeat.belkin.com'
+    - 'isure.stream.qqmusic.qq.com'
+    - 'joox.com'
+    - 'lens.l.google.com'
+    - 'local.adguard.org'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    - 'localhost.work.weixin.qq.com'
+    - 'mesu.apple.com'
+    - 'mobileoc.music.tc.qq.com'
+    - 'music.taihe.com'
+    - 'musicapi.taihe.com'
+    - 'na.b.g-tun.com'
+    - 'ntp.*.cn'
+    - 'ntp.*.com'
+    - 'ntp.ntsc.ac.cn'
+    - 'ntp1.*.cn'
+    - 'ntp1.*.com'
+    - 'ntp2.*.cn'
+    - 'ntp2.*.com'
+    - 'ntp3.*.cn'
+    - 'ntp3.*.com'
+    - 'ntp4.*.cn'
+    - 'ntp4.*.com'
+    - 'ntp5.*.cn'
+    - 'ntp5.*.com'
+    - 'ntp6.*.cn'
+    - 'ntp6.*.com'
+    - 'ntp7.*.cn'
+    - 'ntp7.*.com'
+    - 'proxy.golang.org'
+    - 'shark007.net'
+    - 'songsearch.kugou.com'
+    - 'streamoc.music.tc.qq.com'
+    - 'stun.l.google.com'
+    - 'swcdn.apple.com'
+    - 'swdist.apple.com'
+    - 'swdownload.apple.com'
+    - 'swquery.apple.com'
+    - 'swscan.apple.com'
+    - 'time.*.apple.com'
+    - 'time.*.com'
+    - 'time.*.edu.cn'
+    - 'time.*.gov'
+    - 'time.is'
+    - 'time.windows.com'
+    - 'time-ios.apple.com'
+    - 'time1.*.com'
+    - 'time1.cloud.tencent.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'trackercdn.kugou.com'
+    - 'xbox.*.*.microsoft.com'
+    - 'xbox.*.microsoft.com'
+    - 'xnotify.xboxlive.com'
+    - 'mtalk.google.com'
+    - 'mtalk4.google.com'
+    - 'alt1-mtalk.google.com'
+    - 'alt2-mtalk.google.com'
+    - 'alt3-mtalk.google.com'
+    - 'alt4-mtalk.google.com'
+    - 'alt5-mtalk.google.com'
+    - 'alt6-mtalk.google.com'
+    - 'alt7-mtalk.google.com'
+    - 'alt8-mtalk.google.com'
+    - WORKGROUP
+profile:
+  store-selected: true
+  store-fake-ip: true
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080, 8082-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+      override-destination: true
+    QUIC:
+      ports: [443, 8443]
+      override-destination: true
+  force-domain:
+    - +.v2ex.com
+  skip-domain:
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - +.rc.sunlogin.net
+    - time.windows.com
+    - courier.push.apple.com
+    - rbsxbxp-mim.vivox.com
+    - rbsxbxp.www.vivox.com
+    - rbsxbxp-ws.vivox.com
+    - rbspsxp.www.vivox.com
+    - rbspsxp-mim.vivox.com
+    - rbspsxp-ws.vivox.com
+    - rbswxp.www.vivox.com
+    - rbswxp-mim.vivox.com
+    - disp-rbspsp-5-1.vivox.com
+    - disp-rbsxbp-5-1.vivox.com
+    - proxy.rbsxbp.vivox.com
+    - proxy.rbspsp.vivox.com
+    - proxy.rbswp.vivox.com
+    - rbswp.vivox.com
+    - rbsxbp.vivox.com
+    - rbspsp.vivox.com
+    - rbspsp.www.vivox.com
+    - rbswp.www.vivox.com
+    - rbsxbp.www.vivox.com
+    - rbsxbxp.vivox.com
+    - rbspsxp.vivox.com
+    - rbswxp.vivox.com
+    - basic-static-server.infinitynewtab.com
+    - hp3.mail.netease.com
+    - +.mail.netease.com
+    - +.v6.pub
+    - +.tesla.com
+    - +.jd.com
+    - +.meituan.com
+    - +.meituan.net 
+    - www.mdpi.com
+    - www.sciencedirect.com
+  skip-dst-address:
+    - 223.5.5.5/32
+    - 223.6.6.6/32
+    - 119.29.29.29/32
+    - 1.1.1.1/32
+    - 1.0.0.1/32
+    - 8.8.8.8/32
+    - 8.8.4.4/32
+    - 101.101.101.101/32
+    - 110.242.69.63/32
+    - 221.194.154.187/32
+    - 36.248.45.62/32
+    - 2001:4860:4860::8888/128
+    - 2001:4860:4860::8844/128
+hosts:
+  mtalk.google.com: [142.250.107.188, 142.251.170.188, 108.177.125.188]
+  alt1-mtalk.google.com: [172.217.78.188, 172.253.135.188, 192.178.223.188]
+  alt2-mtalk.google.com: [192.178.164.188, 172.217.74.188, 172.217.78.188]
+  alt3-mtalk.google.com: [172.253.135.188, 172.217.74.188, 74.125.27.188]
+  alt4-mtalk.google.com: [172.217.74.188, 172.253.135.188, 192.178.209.188]
+  alt5-mtalk.google.com: [74.125.27.188, 74.125.131.188, 192.178.152.188]
+  alt6-mtalk.google.com: [192.178.209.188, 172.217.74.188, 172.253.130.188]
+  alt7-mtalk.google.com: [192.178.152.188, 192.178.209.188, 74.125.27.188]
+  alt8-mtalk.google.com: [192.178.152.188, 108.177.125.188, 172.217.78.188]
+
+# 实验性功能配置
+experimental:
+  quic-go-disable-gso: true # 禁用 QUIC 协议中的 GSO (Generic Segmentation Offload) 功能
+  quic-go-disable-ecn: true #禁用ECN
+  dialer-ip4p-convert: false # 启用IP4P地址转换
+
+proxies:
+  - name: DIRECT-V4PRE
+    type: direct
+    ip-version: ipv4-prefer
+    udp: true
+    udp-over-tcp: true
+  - name: DIRECT-V6PRE
+    type: direct
+    ip-version: ipv6-prefer
+    udp: true
+    udp-over-tcp: true

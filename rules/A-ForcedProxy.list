@@ -1,0 +1,90 @@
+# NAME: Teams
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:18:24
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 3
+# TOTAL: 4
+DOMAIN,teams.events.data.microsoft.com
+DOMAIN-SUFFIX,teams.cdn.live.net
+DOMAIN-SUFFIX,teams.live.com
+DOMAIN-SUFFIX,teams.microsoft.com
+
+# microsoft skype
+DOMAIN-SUFFIX,skype
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,skype.net
+DOMAIN-SUFFIX,skypeassets.com
+DOMAIN-SUFFIX,skypeassets.net
+DOMAIN-SUFFIX,skypeforbusiness.com
+
+# 海外DNS解析
+DOMAIN,dns.google
+IP-CIDR,8.8.8.8/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR6,2001:4860:4860::8888/128,no-resolve
+IP-CIDR6,2001:4860:4860::8844/128,no-resolve
+IP-CIDR6,2001:4860:4860::64/128,no-resolve
+IP-CIDR6,2001:4860:4860::6464/128,no-resolve
+DOMAIN,dns.cloudflare.com
+DOMAIN,cloudflare-dns.com
+DOMAIN,one.one.one.one
+IP-CIDR,1.1.1.1/32,no-resolve
+IP-CIDR,1.1.1.2/32,no-resolve
+IP-CIDR,1.0.0.1/32,no-resolve
+IP-CIDR,101.101.101.101/32,no-resolve
+IP-CIDR6,2606:4700:4700::1111/128,no-resolve
+IP-CIDR6,2606:4700:4700::1001/128,no-resolve
+IP-CIDR6,2606:4700:4700::64/128,no-resolve
+IP-CIDR6,2606:4700:4700::6464/128,no-resolve
+DOMAIN-SUFFIX,opendns.com
+DOMAIN,dns.umbrella.com
+IP-CIDR,208.67.220.220/32,no-resolve
+IP-CIDR,208.67.222.222/32,no-resolve
+IP-CIDR,208.67.220.123/32,no-resolve
+IP-CIDR,208.67.222.123/32,no-resolve
+IP-CIDR,208.67.220.2/32,no-resolve
+IP-CIDR,208.67.222.2/32,no-resolve
+IP-CIDR6,2620:119:35::35/128,no-resolve
+IP-CIDR6,2620:119:53::53/128,no-resolve
+IP-CIDR6,2620:119:35::123/128,no-resolve
+IP-CIDR6,2620:119:53::123/128,no-resolve
+IP-CIDR6,2620:0:ccc::2/128,no-resolve
+IP-CIDR6,2620:0:ccd::2/128,no-resolve
+IP-CIDR6,2a00:5a60::ad1:0ff/128,no-resolve
+IP-CIDR6,2a00:5a60::bad1:0ff/128,no-resolve
+IP-CIDR6,2a00:5a60::ad2:0ff/128,no-resolve
+IP-CIDR6,2a00:5a60::bad2:0ff/128,no-resolve
+IP-CIDR6,2001:1608:10:25::1c04:b12f/128,no-resolve
+IP-CIDR6,2001:1608:10:25::9249:d69b/128,no-resolve
+IP-CIDR6,2610:a1:1018::1/128,no-resolve
+IP-CIDR6,2610:a1:1019::1/128,no-resolve
+IP-CIDR6,2610:a1:1018::5/128,no-resolve
+DOMAIN,dns.quad9.net
+DOMAIN,dns11.quad9.net
+IP-CIDR6,2620:fe::fe/128,no-resolve
+IP-CIDR6,2620:fe::9/128,no-resolve
+IP-CIDR6,2620:74:1b::1:1/128,no-resolve
+IP-CIDR6,2620:74:1c::2:2/128,no-resolve
+IP-CIDR6,2001:67c:28a4::/128,no-resolve
+IP-CIDR6,2a01:3a0:53:53::/128,no-resolve
+IP-CIDR6,2001:418:3ff::53/128,no-resolve
+IP-CIDR6,2001:418:3ff::1:53/128,no-resolve
+IP-CIDR6,2a09::/128,no-resolve
+IP-CIDR6,2a11::/128,no-resolve
+IP-CIDR6,2a0d:2a00:1::/128,no-resolve
+IP-CIDR6,2a0d:2a00:1::1/128,no-resolve
+IP-CIDR6,2a0d:2a00:1::2/128,no-resolve
+IP-CIDR6,2a0d:2a00:2::/128,no-resolve
+IP-CIDR6,2a0d:2a00:2::1/128,no-resolve
+IP-CIDR6,2a0d:2a00:2::2/128,no-resolve
+
+# 其他
+DOMAIN-SUFFIX,login.tailscale.com
+DOMAIN-SUFFIX,www.tailscale.com
+DOMAIN,jms-support.eurekaselect.com
+DOMAIN-SUFFIX,manuscriptpoint.com
+DOMAIN-SUFFIX,885999.xyz
+DOMAIN-SUFFIX,akoi.cc
+DOMAIN-SUFFIX,ccoff.com
+
