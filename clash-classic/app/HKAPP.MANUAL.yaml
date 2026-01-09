@@ -2,8 +2,6 @@ payload:
  - PROCESS-NAME,com.bochk.app.aos
  - PROCESS-NAME,hk.com.hsbc.hsbchkmobilebanking
  - DOMAIN-SUFFIX,hk.alph.netlib.re
- - DOMAIN-SUFFIX,yamlforge.lululucy.top
- - DOMAIN-SUFFIX,conv.lululucy.top
  - DOMAIN-SUFFIX,hk1.kuxueyun.com
  - DOMAIN-SUFFIX,frp.112700.xyz
  - DOMAIN-SUFFIX,frphk.112700.xyz
@@ -17,6 +15,9 @@ payload:
  - IP-CIDR,45.8.186.0/24,no-resolve
  - IP-CIDR,47.76.213.0/24,no-resolve
  - IP-CIDR,47.238.100.0/24,no-resolve
+ - IP-CIDR,156.226.173.0/24,no-resolve
+ - IP-CIDR,149.104.4.0/24,no-resolve
+ - IP-CIDR,143.14.105.0/24,no-resolve
  - IP-CIDR,103.244.91.0/24,no-resolve
  - IP-CIDR,141.11.148.0/24,no-resolve
  - IP-CIDR,154.83.0.0/16,no-resolve
