@@ -1100,5 +1100,9 @@ jobs:
 
     - name: Commit and push changes
       run: |
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+          exit 0
+        fi
         git commit -m "Rule-Update" -a
         git push
