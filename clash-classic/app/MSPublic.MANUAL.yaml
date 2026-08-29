@@ -1,0 +1,11 @@
+payload:
+ - GEOSITE,bing
+ - DOMAIN,designer.microsoft.com
+ - DOMAIN-SUFFIX,githubcopilot.com
+ - DOMAIN,copilot-telemetry.githubusercontent.com
+ - DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com
+ - PROCESS-NAME,Copilot.exe
+ - PROCESS-NAME,Copilot
+ - PROCESS-NAME,M365Copilot.exe
+ - PROCESS-NAME,M365Copilot
+ - PROCESS-NAME,com.microsoft.copilot

@@ -1,0 +1,4 @@
+payload:
+ - DOMAIN-REGEX,.*\.mcdn\.bilivideo\.(com|cn|net)$
+ - DOMAIN-SUFFIX,buychennai.com
+ - DOMAIN-SUFFIX,pages-gist.com

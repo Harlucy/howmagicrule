@@ -1,0 +1,21 @@
+# Google GEOSITE
+GEOSITE,google
+GEOIP,google,no-resolve
+
+# 邮箱
+DOMAIN-SUFFIX,smtp.gmail.com
+DOMAIN-SUFFIX,pop.gmail.com
+DOMAIN-SUFFIX,imap.gmail.com
+DOMAIN-SUFFIX,mail.google.com
+
+# GoogleNotebooklm/GEMINI/antigravity
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,antigravity.google
+PROCESS-NAME,com.google.android.apps.bard
+PROCESS-NAME,com.google.android.apps.gemini
+PROCESS-NAME,com.google.android.apps.labs.language.tailwind
+
+# Google Play other
+DOMAIN-SUFFIX,play.app
+

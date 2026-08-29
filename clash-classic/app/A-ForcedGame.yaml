@@ -1,0 +1,5 @@
+payload:
+ - DOMAIN-REGEX,^[^.]*check[^.]*\.[^.]*\.*steam\.net$
+ - DOMAIN-REGEX,^[^.]*check[^.]*\.[^.]*\.*steampowered\.com$
+ - DOMAIN-SUFFIX,store.steampowered.com
+ - DOMAIN-SUFFIX,steamconnecttest.com

@@ -1,0 +1,46 @@
+# Claude其他
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-KEYWORD,claudeusercontent
+PROCESS-NAME,com.anthropic.claude
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudeusercontent.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+# ChatGPT其他
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,gpt-oss.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sora.com
+PROCESS-NAME,com.openai.chatgpt
+PROCESS-NAME,com.openai.sora
+DOMAIN-SUFFIX,chatgptexporter.com
+AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
+AND,((DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net))
+# X.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+PROCESS-NAME,ai.x.grok
+# perplexity
+DOMAIN-SUFFIX,perplexity.ai
+PROCESS-NAME,ai.perplexity.app.android
+# FacebookMetaAI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,llama.com
+# Kilo
+DOMAIN-SUFFIX,kilo.ai
+# Apple Intelligence
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,apps.mzstatic.com
+
+# other
+AND,((GEOSITE,category-ai-!cn),(NOT,((GEOSITE,google))))
+DOMAIN-SUFFIX,llmsresearch.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.com

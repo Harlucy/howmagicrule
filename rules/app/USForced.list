@@ -1,0 +1,94 @@
+# NAME: GoogleDrive
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:15:10
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 4
+# PROCESS-NAME: 1
+# TOTAL: 6
+DOMAIN,www.googleapis.com
+DOMAIN-SUFFIX,docs.google.com
+DOMAIN-SUFFIX,drive.google.com
+DOMAIN-SUFFIX,googledrive.com
+DOMAIN-SUFFIX,googleusercontent.com
+PROCESS-NAME,BackupandSync
+
+# GoogleDrive补充
+DOMAIN-SUFFIX,drivefrontend-pa.googleapis.com
+DOMAIN-SUFFIX,signaler-pa.googleapis.com
+DOMAIN-SUFFIX,fcmconnection.googleapis.com
+PROCESS-NAME,'Google Drive Helper (Renderer)'
+PROCESS-NAME,'Google Drive Helper (GPU)'
+PROCESS-NAME,'Google Drive Helper'
+PROCESS-NAME,'Google Drive'
+
+# OpenClaw
+DOMAIN-SUFFIX,openclaw.ai
+# LLM竞技场
+DOMAIN-SUFFIX,lmsys.org
+# ollama
+DOMAIN-SUFFIX,ollama.com
+DOMAIN-SUFFIX,ollama.ai
+# HuggingFace
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,huggingface.co
+# Openrouter
+DOMAIN-SUFFIX,openrouter.com
+# Groq
+DOMAIN-SUFFIX,groq.com
+# KLing可灵
+DOMAIN-SUFFIX,klingai.com
+# SiderAI
+DOMAIN-SUFFIX,sider.ai
+# 阿里Qoder
+DOMAIN-SUFFIX,qoder.com
+# Cerebras
+DOMAIN-SUFFIX,cerebras.ai
+# Trae IDE
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,traeapi.us
+DOMAIN-SUFFIX,traecdn.ai
+DOMAIN-REGEX,.*useast.*\.mchost\.guru$
+DOMAIN-SUFFIX,marscode.com
+# flowith
+DOMAIN-SUFFIX,flowith.net
+DOMAIN-SUFFIX,flowith.featurebase.app
+DOMAIN-SUFFIX,edge.flo.ing
+DOMAIN-SUFFIX,us-assets.i.posthog.com
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
+# poe
+DOMAIN-SUFFIX,poe.com
+# cohere
+DOMAIN-KEYWORD,cohere
+# coze
+DOMAIN-SUFFIX,coze.com
+# JetBrains AI 
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+# codeium&windsurf
+DOMAIN-SUFFIX,codeiumdata.com
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,windsurf.com
+# hcompany.ai
+DOMAIN-SUFFIX,hcompany.ai
+DOMAIN-KEYWORD,hcompany
+# PearAi
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,pearai.b-cdn.net
+DOMAIN-SUFFIX,trypear.ai
+# Manus
+DOMAIN-SUFFIX,manus.im
+DOMAIN-SUFFIX,manus.space
+DOMAIN-SUFFIX,manuscdn.com
+#kiro
+DOMAIN-SUFFIX,kiro.dev
+#kilocode
+DOMAIN-SUFFIX,kilocode.ai
+# yupp
+DOMAIN-SUFFIX,yupp.ai
+# Other
+DOMAIN-SUFFIX,dl.google.com
+DOMAIN-SUFFIX,chocobo.mxrouting.net
+DOMAIN-SUFFIX,mail.nbsu.de
+

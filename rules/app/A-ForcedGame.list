@@ -1,0 +1,6 @@
+DOMAIN-REGEX,^[^.]*check[^.]*\.[^.]*\.*steam\.net$
+DOMAIN-REGEX,^[^.]*check[^.]*\.[^.]*\.*steampowered\.com$
+DOMAIN-SUFFIX,store.steampowered.com
+DOMAIN-SUFFIX,steamconnecttest.com
+# DOMAIN-REGEX,^[^.]*cmp[^.]*\.[^.]*\.*steamserver\.net$
+# DOMAIN-REGEX,^[^.]*check[^.]*\.[^.]*\.*steamserver\.net$

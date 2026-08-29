@@ -1,0 +1,58 @@
+payload:
+ - DOMAIN,www.googleapis.com
+ - DOMAIN-SUFFIX,docs.google.com
+ - DOMAIN-SUFFIX,drive.google.com
+ - DOMAIN-SUFFIX,googledrive.com
+ - DOMAIN-SUFFIX,googleusercontent.com
+ - PROCESS-NAME,BackupandSync
+ - DOMAIN-SUFFIX,drivefrontend-pa.googleapis.com
+ - DOMAIN-SUFFIX,signaler-pa.googleapis.com
+ - DOMAIN-SUFFIX,fcmconnection.googleapis.com
+ - PROCESS-NAME,'Google Drive Helper (Renderer)'
+ - PROCESS-NAME,'Google Drive Helper (GPU)'
+ - PROCESS-NAME,'Google Drive Helper'
+ - PROCESS-NAME,'Google Drive'
+ - DOMAIN-SUFFIX,openclaw.ai
+ - DOMAIN-SUFFIX,lmsys.org
+ - DOMAIN-SUFFIX,ollama.com
+ - DOMAIN-SUFFIX,ollama.ai
+ - DOMAIN-SUFFIX,hf.co
+ - DOMAIN-SUFFIX,huggingface.co
+ - DOMAIN-SUFFIX,openrouter.com
+ - DOMAIN-SUFFIX,groq.com
+ - DOMAIN-SUFFIX,klingai.com
+ - DOMAIN-SUFFIX,sider.ai
+ - DOMAIN-SUFFIX,qoder.com
+ - DOMAIN-SUFFIX,cerebras.ai
+ - DOMAIN-SUFFIX,trae.ai
+ - DOMAIN-SUFFIX,traeapi.us
+ - DOMAIN-SUFFIX,traecdn.ai
+ - DOMAIN-REGEX,.*useast.*\.mchost\.guru$
+ - DOMAIN-SUFFIX,marscode.com
+ - DOMAIN-SUFFIX,flowith.net
+ - DOMAIN-SUFFIX,flowith.featurebase.app
+ - DOMAIN-SUFFIX,edge.flo.ing
+ - DOMAIN-SUFFIX,us-assets.i.posthog.com
+ - DOMAIN-SUFFIX,us.i.posthog.com
+ - DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
+ - DOMAIN-SUFFIX,poe.com
+ - DOMAIN-KEYWORD,cohere
+ - DOMAIN-SUFFIX,coze.com
+ - DOMAIN-SUFFIX,grazie.ai
+ - DOMAIN-SUFFIX,grazie.aws.intellij.net
+ - DOMAIN-SUFFIX,codeiumdata.com
+ - DOMAIN-SUFFIX,codeium.com
+ - DOMAIN-SUFFIX,windsurf.com
+ - DOMAIN-SUFFIX,hcompany.ai
+ - DOMAIN-KEYWORD,hcompany
+ - DOMAIN-SUFFIX,pearai.b-cdn.net
+ - DOMAIN-SUFFIX,trypear.ai
+ - DOMAIN-SUFFIX,manus.im
+ - DOMAIN-SUFFIX,manus.space
+ - DOMAIN-SUFFIX,manuscdn.com
+ - DOMAIN-SUFFIX,kiro.dev
+ - DOMAIN-SUFFIX,kilocode.ai
+ - DOMAIN-SUFFIX,yupp.ai
+ - DOMAIN-SUFFIX,dl.google.com
+ - DOMAIN-SUFFIX,chocobo.mxrouting.net
+ - DOMAIN-SUFFIX,mail.nbsu.de

@@ -1,0 +1,28 @@
+# 一些日本服务
+DOMAIN-SUFFIX,teracloud.jp
+DOMAIN-KEYWORD,teracloud
+DOMAIN-KEYWORD,infini-cloud
+DOMAIN-SUFFIX,frpjp.iswsh.com
+DOMAIN-SUFFIX,frpjp.112700.xyz
+DOMAIN-SUFFIX,jpakile0.112700.xyz
+
+# VPS
+# skylineconnect
+IP-CIDR,212.135.210.0/24,no-resolve
+IP-CIDR6,2a13:edc0:18::/48,no-resolve
+# akile jp
+IP-CIDR,156.246.89.0/24,no-resolve
+IP-CIDR6,2a12:f8c1:50::/48,no-resolve
+IP-CIDR6,2602:fa4f:a30::/48,no-resolve
+# skystroll jp
+IP-CIDR,209.248.45.0/24,no-resolve
+IP-CIDR6,2401:f460:1073::/48,no-resolve
+# RFC jp
+IP-CIDR,104.251.231.0/24,no-resolve
+# LazyCat rfchost jp lite
+IP-CIDR,23.249.25.0/24,no-resolve
+# LazyCat gomami jp
+IP-CIDR,151.244.134.0/24,no-resolve
+# LazyCat jpkddi
+IP-CIDR,131.143.214.0/24,no-resolve
+

@@ -1,0 +1,3 @@
+# Generated YAML files intentionally kept without a matching rules/*.list source.
+clash-classic/A-ForcedDirect.SERVER.update.yaml
+clash-classic/IRSDownload.yaml

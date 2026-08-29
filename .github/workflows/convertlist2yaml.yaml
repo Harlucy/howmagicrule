@@ -1,0 +1,47 @@
+name: Convert-Clash-classic-ruleset
+
+on:
+  workflow_run:
+    workflows: [Rule-Update]
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: convert-rules
+  cancel-in-progress: true
+
+jobs:
+  convert:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Git
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+
+      - name: Convert rules
+        shell: bash
+        run: |
+          bash scripts/convert-list-to-yaml.sh
+          python3 scripts/validate-rules.py
+
+      - name: Commit and push
+        shell: bash
+        run: |
+          git add clash-classic config scripts
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Convert rules to Clash Classic"
+          git pull --rebase origin main
+          git push origin main
