@@ -241,6 +241,28 @@ sniffer:
   skip-domain:
     - Mijia Cloud
     - dlg.io.mi.com
+    # Xiaomi / Mijia / MIoT
+    - +.io.mi.com
+    - +.mi.com
+    - +.mijia.tech
+    - +.miot-spec.org
+    - +.mi-img.com
+    - +.xiaomi.com
+    - +.xiaomi.net
+    - +.miui.com
+    - +.mipush.com
+    - +.miwifi.com
+    - +.xiaomixiaoai.com
+    - +.xiaoaiassist.com
+    - +.xiaoaisound.com
+    # Common smart-home ecosystems
+    - +.yeelight.com
+    - +.aqara.com
+    - +.lumiunited.com
+    - +.tuya.com
+    - +.tuyacn.com
+    - +.tuyaus.com
+    - +.tuyaeu.com
     - +.apple.com
     - +.rc.sunlogin.net
     - time.windows.com

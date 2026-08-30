@@ -329,6 +329,29 @@ sniffer:
     - mtalk-staging.google.com
     - +.cloudflare-ech.com
     - Mijia Cloud
+    # Xiaomi / Mijia / MIoT
+    - dlg.io.mi.com
+    - +.io.mi.com
+    - +.mi.com
+    - +.mijia.tech
+    - +.miot-spec.org
+    - +.mi-img.com
+    - +.xiaomi.com
+    - +.xiaomi.net
+    - +.miui.com
+    - +.mipush.com
+    - +.miwifi.com
+    - +.xiaomixiaoai.com
+    - +.xiaoaiassist.com
+    - +.xiaoaisound.com
+    # Common smart-home ecosystems
+    - +.yeelight.com
+    - +.aqara.com
+    - +.lumiunited.com
+    - +.tuya.com
+    - +.tuyacn.com
+    - +.tuyaus.com
+    - +.tuyaeu.com
     - +.vivo.net
     - +.vivo.com
     - +.vivo.com.cn

@@ -4,4 +4,3 @@ clash-classic/GlobalCDN.MANUAL.yaml
 clash-classic/LargePrivacy.yaml
 clash-classic/PlayGame.yaml
 clash-classic/app/TWAPP.MANUAL.yaml
-clash-classic/app/WHSpecial.yaml
