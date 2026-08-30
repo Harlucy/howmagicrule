@@ -249,6 +249,11 @@ IP-CIDR,45.137.180.230/32,no-resolve
 # 喵云CN
 DOMAIN-SUFFIX,aip.acgf.vip
 DOMAIN-SUFFIX,apii.acgf.vip
+DOMAIN,prometheus.lululucy.top
+DOMAIN,s.lululucy.top
+DOMAIN,sub.lululucy.top
+DOMAIN,forge.lululucy.top
+DOMAIN,conv.lululucy.top
 
 
 AND,((DOMAIN-SUFFIX,9d9082baa4c9269b18fa.thisgourl.xyz),(OR,((DST-PORT,57031),(SRC-PORT,57031))))
