@@ -23,7 +23,7 @@
 例如，使用订阅转换服务时，将下列编码后的地址作为规则配置地址：
 
 ```text
-https%3A%2F%2Fraw.githubusercontent.com%2Ffortressme%2Fownmagicrule%2Fmain%2Fclash-rule-general.ini
+https%3A%2F%2Fraw.githubusercontent.com%2FHarlucy%2Fhowmagicrule%2Fmain%2Fclash-rule-general.ini
 ```
 
 ## 目录约定
