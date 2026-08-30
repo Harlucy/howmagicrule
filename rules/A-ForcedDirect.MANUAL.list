@@ -249,3 +249,8 @@ IP-CIDR,45.137.180.230/32,no-resolve
 # 喵云CN
 DOMAIN-SUFFIX,aip.acgf.vip
 DOMAIN-SUFFIX,apii.acgf.vip
+DOMAIN,prometheus.lululucy.top
+DOMAIN,s.lululucy.top
+DOMAIN,sub.lululucy.top
+DOMAIN,forge.lululucy.top
+DOMAIN,conv.lululucy.top
