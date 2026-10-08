@@ -83,6 +83,7 @@ payload:
  - DOMAIN-WILDCARD,cdn*.porn87.com
  - DOMAIN-WILDCARD,cdn*.pornhost.com
  - DOMAIN-WILDCARD,cdn*.boysfood.com
+ - DOMAIN-WILDCARD,rum-ingest.*.signalfx.com
  - DOMAIN-WILDCARD,download*.mediafire.com
  - DOMAIN-WILDCARD,ftp.??.debian.org
  - DOMAIN-WILDCARD,ftp.??.freebsd.org
