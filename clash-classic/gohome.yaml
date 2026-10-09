@@ -2,6 +2,7 @@ payload:
  - DOMAIN-SUFFIX,1016.lululucy.top
  - DOMAIN-SUFFIX,unraid.lululucy.top
  - DOMAIN-SUFFIX,photos.lululucy.top
+ - IP-CIDR,192.168.1.75/32,no-resolve
  - IP-CIDR,192.168.22.0/24,no-resolve
  - IP-CIDR,192.168.55.0/24,no-resolve
  - IP-CIDR,192.168.63.0/24,no-resolve
