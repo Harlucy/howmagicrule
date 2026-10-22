@@ -74,7 +74,6 @@ DOMAIN-SUFFIX,windsurf.com
 DOMAIN-SUFFIX,hcompany.ai
 DOMAIN-KEYWORD,hcompany
 # PearAi
-DOMAIN-SUFFIX,us.i.posthog.com
 DOMAIN-SUFFIX,pearai.b-cdn.net
 DOMAIN-SUFFIX,trypear.ai
 # Manus
@@ -91,4 +90,3 @@ DOMAIN-SUFFIX,yupp.ai
 DOMAIN-SUFFIX,dl.google.com
 DOMAIN-SUFFIX,chocobo.mxrouting.net
 DOMAIN-SUFFIX,mail.nbsu.de
-

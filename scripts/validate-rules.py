@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate rule sources, generated providers, and INI references."""
 from pathlib import Path
+import json
 import re
 import sys
 
@@ -9,7 +10,10 @@ RULES = ROOT / "rules"
 OUTPUT = ROOT / "clash-classic"
 STATIC_MANIFEST = ROOT / "config" / "static-yaml-outputs.txt"
 EMPTY_MANIFEST = ROOT / "config" / "allowed-empty-yaml.txt"
-EXCLUDED = {"app/GameDLCN.MANUAL.list", "MyDirect.SERVER.list"}
+EXCLUDED = {"app/GameDLCN.MANUAL.list", "MyDirect.SERVER.list", "A-ForcedDirect.SERVER.update.list"}
+FORBIDDEN_RULES = {"app/WHSpecial.list", "cqgas.list"}
+POLICY = json.loads((ROOT / "config/upstream-sync.json").read_text(encoding="utf-8"))
+FORBIDDEN_MARKERS = POLICY["ini"]["forbidden_tokens"]
 
 
 def read_manifest(path: Path) -> set[str]:
@@ -31,11 +35,23 @@ static_outputs = read_manifest(STATIC_MANIFEST)
 allowed_empty = read_manifest(EMPTY_MANIFEST)
 expected: set[str] = set()
 
+for forbidden in sorted(FORBIDDEN_RULES):
+    if (RULES / forbidden).exists():
+        report(f"{RULES.relative_to(ROOT) / forbidden}: forbidden provider rule is present")
+        errors += 1
+
+for relative in POLICY.get("force_empty", []):
+    path = ROOT / relative
+    if not path.exists() or any(line.strip() and not line.lstrip().startswith("#") for line in path.read_text(encoding="utf-8").splitlines()):
+        report(f"{relative}: reserved local rule source must remain empty")
+        errors += 1
+
 valid_prefixes = {
     "DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-REGEX",
     "IP-CIDR", "IP-CIDR6", "IP-ASN", "GEOIP", "GEOSITE", "MATCH", "PROCESS-NAME",
     "SRC-IP-CIDR", "DST-PORT", "SRC-PORT", "RULE-SET", "AND", "OR",
     "NOT", "URL-REGEX", "DOMAIN-WILDCARD", "PROCESS-NAME-WILDCARD",
+    "PROCESS-PATH-REGEX",
 }
 
 for source in RULES.rglob("*.list"):
@@ -70,6 +86,10 @@ for relative in sorted(actual):
             report(f"{relative}:{number}: invalid payload entry")
             errors += 1
             break
+        if line and line[3:].split(",", 1)[0] not in valid_prefixes:
+            report(f"{relative}:{number}: unsupported generated rule type")
+            errors += 1
+            break
 
 for relative in sorted(expected - actual):
     report(f"missing generated output: {relative}")
@@ -81,6 +101,27 @@ for relative in sorted(actual - expected - static_outputs):
 ini_pattern = re.compile(r"clash-classic/[A-Za-z0-9_./-]+\.yaml")
 for ini in ROOT.glob("*.ini"):
     content = ini.read_text(encoding="utf-8", errors="replace")
+    for marker in FORBIDDEN_MARKERS:
+        if marker.casefold() in content.casefold():
+            report(f"{ini.name}: forbidden provider marker is present: {marker}")
+            errors += 1
+    apple_group = re.search(r"^custom_proxy_group=🍏 苹果服务`select`\[\]([^`\r\n]+)", content, re.MULTILINE)
+    if apple_group and apple_group.group(1) != "🚄 本地直连":
+        report(f"{ini.name}: Apple service default must be local direct")
+        errors += 1
+    for number, line in enumerate(content.splitlines(), 1):
+        if not line.startswith("custom_proxy_group="):
+            continue
+        fields = line.split("`")
+        if len(fields) < 3 or fields[2] in {"", "[]"}:
+            continue
+        selector = fields[2]
+        if selector.startswith("("):
+            try:
+                re.compile(selector)
+            except re.error as exc:
+                report(f"{ini.name}:{number}: invalid node regex: {exc}")
+                errors += 1
     for reference in sorted(set(ini_pattern.findall(content))):
         if not (ROOT / reference).exists():
             report(f"{ini.name}: referenced file does not exist: {reference}")

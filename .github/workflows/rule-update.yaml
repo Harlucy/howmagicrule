@@ -22,6 +22,13 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
 
+    - name: Check upstream sync regressions
+      run: python3 scripts/test-sync-upstream.py
+
+    - name: Sync selected rules from upstream
+      run: |
+        python3 scripts/sync-upstream.py
+
     - name: Update ForcedDirect.SERVER.list
       run: |
         if [ -f rules/A-ForcedDirect.SERVER.update.list ]; then
@@ -134,20 +141,6 @@ jobs:
         fi
         echo "Cleaning up temporary files for $target_list..."
         rm -f "${temp_files[@]}"
-
-    - name: Append SERVER list to ForcedDirect rules
-      run: |
-        server_list="rules/A-ForcedDirect.SERVER.list"
-        target_list="rules/A-ForcedDirect.list"
-        if [[ -f "$server_list" && -s "$server_list" ]]; then
-          echo "Found $server_list. Appending its content to $target_list..."
-          echo >> "$target_list"
-          cat "$server_list" >> "$target_list"
-          echo >> "$target_list"
-          echo "Successfully appended $server_list to $target_list."
-        else
-          echo "Skipping append: $server_list does not exist or is empty."
-        fi
 
     - name: Download ForcedProxy rules
       run: |
@@ -557,20 +550,6 @@ jobs:
         else echo "::warning:: $target_list was not updated due to one or more download failures."; fi
         echo "Cleaning up temporary files for $target_list..."; rm -f "${temp_files[@]}"
 
-    - name: Append SERVER list to ForcedDirect rules
-      run: |
-        server_list="rules/A-ForcedDirect.SERVER.list"
-        target_list="rules/A-ForcedDirect.list"
-        if [[ -f "$server_list" && -s "$server_list" ]]; then
-          echo "Found $server_list. Appending its content to $target_list..."
-          echo >> "$target_list"
-          cat "$server_list" >> "$target_list"
-          echo >> "$target_list"
-          echo "Successfully appended $server_list to $target_list."
-        else
-          echo "Skipping append: $server_list does not exist or is empty."
-        fi
-        
     - name: Download GameDLCN rules (SteamCN, GameDownloadCN)
       run: |
         files=(
@@ -1638,9 +1617,17 @@ jobs:
         rm -f dns_config.txt
         echo "DNS rules update complete."
 
+    - name: Apply local policy and validate generated rules
+      run: |
+        python3 scripts/sync-upstream.py --local-only
+        python3 scripts/normalize-rules.py
+        python3 scripts/normalize-rules.py --check
+        bash scripts/convert-list-to-yaml.sh
+        python3 scripts/validate-rules.py
+
     - name: Add changes to the repository
       run: |
-        git add rules
+        git add rules clash-classic clash-rule*.ini
         git status
 
     - name: Commit and push changes
@@ -1650,4 +1637,5 @@ jobs:
           exit 0
         fi
         git commit -m "Rule-Update"
+        git pull --rebase origin main
         git push origin main

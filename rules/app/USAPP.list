@@ -365,7 +365,6 @@ DOMAIN-SUFFIX,ushb.096899.xyz
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
 DOMAIN-SUFFIX,ohnous.876521.xyz
-DOMAIN-SUFFIX,ohnous.876521.xyz
 DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,frpusstu.876521.xyz
 DOMAIN-SUFFIX,ushe0.112700.xyz
@@ -406,7 +405,6 @@ IP-CIDR,103.11.79.0/24,no-resolve
 IP-CIDR6,2607:f130:0000::/48,no-resolve
 # RN US LA
 IP-CIDR,192.119.78.0/24,no-resolve
-IP-CIDR6,2607:f130:0000::/48,no-resolve
 
 IP-CIDR,23.94.180.0/24,no-resolve
 IP-CIDR,23.144.124.0/24,no-resolve
@@ -428,4 +426,3 @@ IP-CIDR6,2602:fa4f:900::/48,no-resolve
 IP-CIDR6,2605:6f01:2000::/48,no-resolve
 IP-CIDR6,2607:9000:800::/48,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
-

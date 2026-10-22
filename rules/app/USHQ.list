@@ -852,9 +852,6 @@ IP-ASN,32934,no-resolve
 # TOTAL: 17
 DOMAIN,graph.facebook.com
 DOMAIN-SUFFIX,bintray.com
-DOMAIN-SUFFIX,whatsapp.biz
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-KEYWORD,whatsapp
 IP-CIDR,158.85.224.160/27,no-resolve
 IP-CIDR,158.85.46.128/27,no-resolve
@@ -970,4 +967,3 @@ DOMAIN-SUFFIX,colostate.edu
 
 # Other
 DOMAIN-SUFFIX,safeway.com
-

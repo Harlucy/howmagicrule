@@ -8,6 +8,9 @@ STATIC_MANIFEST="${STATIC_MANIFEST:-config/static-yaml-outputs.txt}"
 EXCLUDE_FILES=(
   "app/GameDLCN.MANUAL.list"
   "MyDirect.SERVER.list"
+  "A-ForcedDirect.SERVER.update.list"
+  "app/WHSpecial.list"
+  "cqgas.list"
 )
 EXCLUDE_PREFIXES=("USER-AGENT,")
 REPLACE_PREFIXES=(

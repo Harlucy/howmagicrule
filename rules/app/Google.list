@@ -723,7 +723,6 @@ DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,makersuite.google.com
 DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
@@ -753,5 +752,3 @@ PROCESS-NAME,com.google.android.apps.labs.language.tailwind
 
 # Google Play other
 DOMAIN-SUFFIX,play.app
-
-

@@ -13,7 +13,6 @@ DOMAIN-SUFFIX,teams.microsoft.com
 # MS Teams other
 AND,((NETWORK,UDP),(AND,((DST-PORT,3478-3481),(OR,((IP-CIDR,52.112.0.0/14),(OR,((IP-CIDR,52.122.0.0/15),(IP-CIDR6,2603:1063::/38))))))))
 DOMAIN-SUFFIX,teams.cloud.microsoft
-DOMAIN-SUFFIX,teams.microsoft.com
 DOMAIN,teams.cloud.microsoft
 DOMAIN,teams.microsoft.com
 IP-CIDR,52.112.0.0/14,no-resolve
@@ -25,6 +24,9 @@ IP-CIDR6,2603:1057::/48,no-resolve
 IP-CIDR6,2603:1063::/38,no-resolve
 IP-CIDR6,2620:1ec:6::/48,no-resolve
 IP-CIDR6,2620:1ec:40::/42,no-resolve
+
+# WorkBuddy SG
+DOMAIN-SUFFIX,sg.tgalileo.com
 
 # Amazon Simple Storage
 DOMAIN-SUFFIX,ap-south-1.amazonaws.com
@@ -71,6 +73,9 @@ PROCESS-NAME,com.binance.dev
 PROCESS-NAME,vip.mytokenpocket
 
 # VPS
+# DATAWAVE
+IP-CIDR,82.109.97.0/24,no-resolve
+IP-CIDR6,2a0a:d687:f007::/48,no-resolve
 # LAIN
 IP-CIDR,200.180.166.0/24,no-resolve
 IP-CIDR6,2602:f864:248::/48,no-resolve
@@ -81,4 +86,3 @@ IP-CIDR,92.112.22.0/24,no-resolve
 IP-CIDR,92.112.23.0/24,no-resolve
 IP-CIDR,185.151.146.0/24,no-resolve
 IP-CIDR6,2603:c024:4518::/48,no-resolve
-

@@ -1,0 +1,56 @@
+{
+  "upstream": {
+    "remote": "upstream",
+    "url": "https://github.com/fortressme/ownmagicrule.git",
+    "ref": "main"
+  },
+  "include": [
+    "rules/*.list",
+    "rules/app/*.list",
+    "clash-rule*.ini"
+  ],
+  "exclude": [
+    "rules/gohome.list",
+    "rules/*.MANUAL.list",
+    "rules/app/*.MANUAL.list",
+    "rules/app/WHSpecial.list",
+    "rules/cqgas.list",
+    "rules/A-ForcedDirect.SERVER.update.list"
+  ],
+  "remove": [
+    "rules/app/WHSpecial.list",
+    "rules/cqgas.list",
+    "clash-classic/app/WHSpecial.yaml",
+    "clash-classic/cqgas.yaml"
+  ],
+  "force_empty": [
+    "rules/gohome.list"
+  ],
+  "rules_existing_only": true,
+  "ini_existing_only": true,
+  "append_rules": {
+    "rules/A-ForcedDirect.list": ["rules/A-ForcedDirect.SERVER.list"]
+  },
+  "derived_ini": [
+    {
+      "output": "clash-rule-ad.ini",
+      "base": "clash-rule.ini",
+      "insert_before": "clash-classic/MyReject.yaml",
+      "ruleset": ["⛔ 禁止访问", "clash-classic/ADDRejectLite.yaml", "28800"],
+      "title": "clash-rule-small-ad",
+      "notes": [
+        "派生自 clash-rule.ini：唯一差异是多启用一份广告拦截规则 yaml",
+        "  clash-classic/ADDRejectLite.yaml（约 955 KB / 3.8 万条域名规则），拦截目标为「⛔ 禁止访问」",
+        "其余规则集、代理组、漏网策略与 clash-rule.ini 完全一致",
+        "本文件由 scripts/sync-upstream.py 依据 config/upstream-sync.json 生成，请勿手工编辑"
+      ]
+    }
+  ],
+  "ini": {
+    "local_repository": "Harlucy/howmagicrule",
+    "forbidden_tokens": ["WHSpecial", "WHS", "wanhua", "万华", "CQGAS", "重庆", "WH"],
+    "preferred_defaults": {
+      "🍏 苹果服务": "🚄 本地直连"
+    }
+  }
+}

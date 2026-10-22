@@ -540,7 +540,6 @@ PROCESS-NAME,com.vivo.smartmultiwindow
 # CCFLink
 PROCESS-NAME,com.alibaba.android.rimet.ccflink
 # VIVO推送
-PROCESS-NAME,com.vivo.pushservice
 # VIVO互传
 PROCESS-NAME,com.vivo.easyshare
 PROCESS-NAME,com.vivo.findphone
@@ -581,7 +580,6 @@ PROCESS-NAME,com.tencent.wemeet.app
 # 爱山东
 PROCESS-NAME,com.hanweb.android.sdzwfw.activity
 # 蓝心小V
-PROCESS-NAME,com.vivo.ai.base.copilot
 # 米家
 PROCESS-NAME,com.xiaomi.smarthome
 # 中国电信
@@ -594,7 +592,6 @@ PROCESS-NAME,com.xiaomi.mibrain.speech
 PROCESS-NAME,小米云服务.exe
 PROCESS-NAME,Thunder
 PROCESS-NAME,Thunder.exe
-PROCESS-NAME,com.qiyi.video
 PROCESS-NAME,com.bbk.launcher2
 PROCESS-NAME,com.bbk.lite.theme
 PROCESS-NAME,com.vivo.faceunlock
@@ -633,10 +630,8 @@ PROCESS-NAME,com.vivo.gallery.sharedId
 PROCESS-NAME,com.vivo.space
 PROCESS-NAME,com.vivo.safecenter
 PROCESS-NAME,com.vlife.vivo.wallpaper
-PROCESS-NAME,com.htinns
 PROCESS-NAME,qaxdefender.exe
 PROCESS-NAME,MBAAntiVirus.exe
 DOMAIN-SUFFIX,qianxin.com
 DOMAIN-SUFFIX,hihonor.com
 DOMAIN-SUFFIX,newfind.vivo.com
-

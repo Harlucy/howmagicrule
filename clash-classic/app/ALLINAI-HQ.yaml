@@ -68,6 +68,7 @@ payload:
  - DOMAIN-SUFFIX,cp4.cloudflare.com
  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
  - DOMAIN-SUFFIX,apps.mzstatic.com
+ - DOMAIN-SUFFIX,typesafe.ai
  - AND,((GEOSITE,category-ai-!cn),(NOT,((GEOSITE,google))))
  - DOMAIN-SUFFIX,llmsresearch.com
  - DOMAIN-SUFFIX,cursor.sh
