@@ -93,9 +93,6 @@ payload:
  - SRC-PORT,9995
  - IP-CIDR,192.200.0.0/24,no-resolve
  - IP-CIDR6,2606:B740:49::/48,no-resolve
- - DOMAIN-SUFFIX,symcd.com
- - PROCESS-NAME,PgyVisitorEntSvr.exe
- - PROCESS-NAME,PgyVisitorEntSvr
  - PROCESS-NAME,zerotier
  - PROCESS-NAME,zerotier-one
  - PROCESS-NAME,zerotier-cli
@@ -201,6 +198,11 @@ payload:
  - IP-CIDR,45.137.180.230/32,no-resolve
  - DOMAIN-SUFFIX,aip.acgf.vip
  - DOMAIN-SUFFIX,apii.acgf.vip
+ - DOMAIN,prometheus.lululucy.top
+ - DOMAIN,s.lululucy.top
+ - DOMAIN,sub.lululucy.top
+ - DOMAIN,forge.lululucy.top
+ - DOMAIN,conv.lululucy.top
  - AND,((DOMAIN-SUFFIX,5cb88af20d65b8c3e05b.thisgourl.xyz),(OR,((DST-PORT,57031),(SRC-PORT,57031))))
  - AND,((DOMAIN-SUFFIX,avrku8ft-1v9il19zydga0iv7.awstrack.vip),(OR,((DST-PORT,60000),(SRC-PORT,60000))))
  - AND,((DOMAIN-SUFFIX,avrku8ft-1v9il19zydga0iv7.awstrack.vip),(OR,((DST-PORT,60001),(SRC-PORT,60001))))
@@ -2049,8 +2051,3 @@ payload:
  - AND,((IP-CIDR6,2606:4700:57:406a:8fdb:726:3e79:9d05/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
  - AND,((IP-CIDR6,2a05:d014:1a9e:9a00:5b27:255b:8f0a:ac04/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
  - AND,((IP-CIDR6,2a05:d01c:46d:c200:743d:34f:3e9b:fdcd/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
- - DOMAIN,prometheus.lululucy.top
- - DOMAIN,s.lululucy.top
- - DOMAIN,sub.lululucy.top
- - DOMAIN,forge.lululucy.top
- - DOMAIN,conv.lululucy.top
