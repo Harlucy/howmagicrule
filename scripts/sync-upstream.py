@@ -180,6 +180,30 @@ def write_derived_ini(config: dict[str, object], spec: dict[str, object]) -> Non
     write_atomic(ROOT / str(spec["output"]), f"{header}\n" + "\n".join(lines) + "\n")
 
 
+def apply_ini_overrides(text: str, overrides: list[dict[str, object]]) -> str:
+    """Force selected ``custom_proxy_group`` fields to local values after sanitizing.
+
+    Each override matches a full INI line by regex and replaces one backtick-separated
+    field (0-based, counting the ``custom_proxy_group=`` prefix as field 0).
+    """
+    if not overrides:
+        return text
+    output: list[str] = []
+    for raw in text.splitlines():
+        line = raw
+        for spec in overrides:
+            if not re.search(str(spec["match"]), line):
+                continue
+            fields = line.split("`")
+            index = int(spec["field"])
+            if 0 < index < len(fields):
+                fields[index] = str(spec["value"])
+                line = "`".join(fields)
+            break
+        output.append(line)
+    return "\n".join(output) + "\n"
+
+
 def apply_local_policy(config: dict[str, object]) -> None:
     """Restore local additions after both upstream sync and provider downloads."""
     for relative in config["remove"]:
@@ -216,6 +240,14 @@ def apply_local_policy(config: dict[str, object]) -> None:
     for relative in config.get("force_empty", []):
         write_atomic(ROOT / relative, "# Reserved for the future home network deployment.\n")
 
+    overrides = config.get("ini_overrides", [])
+    if overrides:
+        for ini in sorted(ROOT.glob("clash-rule*.ini")):
+            original = ini.read_text(encoding="utf-8")
+            patched = apply_ini_overrides(original, overrides)
+            if patched != original:
+                write_atomic(ini, patched)
+
     for spec in config.get("derived_ini", []):
         write_derived_ini(config, spec)
 
@@ -250,7 +282,10 @@ def main() -> int:
             if config.get("ini_existing_only", True) and not destination.exists():
                 skipped += 1
                 continue
-            pending.append((destination, sanitize_ini(read_blob(commit, relative), config["ini"])))
+            pending.append((destination, apply_ini_overrides(
+                sanitize_ini(read_blob(commit, relative), config["ini"]),
+                config.get("ini_overrides", []),
+            )))
             synced += 1
         else:
             copied = read_path(commit, relative, existing_only=only_existing)

@@ -31,6 +31,14 @@
   "append_rules": {
     "rules/A-ForcedDirect.list": ["rules/A-ForcedDirect.SERVER.list"]
   },
+  "ini_overrides": [
+    {
+      "match": "^custom_proxy_group=🏘 回家专用(低延|灾备)`(url-test|fallback)`",
+      "field": 3,
+      "value": "http://192.168.1.75:5666",
+      "note": "回家组测速地址改成本机可达的 192.168.1.75:5666；上游默认是 192.168.66.66:51512"
+    }
+  ],
   "derived_ini": [
     {
       "output": "clash-rule-ad.ini",

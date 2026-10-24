@@ -114,6 +114,36 @@ class DerivedIniTests(unittest.TestCase):
             self.assertEqual((root / "clash-rule-ad.ini").read_text(encoding="utf-8"), derived)
 
 
+class IniOverrideTests(unittest.TestCase):
+    def test_override_replaces_only_matching_field(self):
+        overrides = CONFIG["ini_overrides"]
+        line = "custom_proxy_group=🏘 回家专用低延`url-test`(回家).+$`http://192.168.66.66:51512`600,,15"
+        other = "custom_proxy_group=🚄 本地直连`select`[]DIRECT"
+        result = SYNC.apply_ini_overrides(line + "\n" + other + "\n", overrides)
+        fields = result.splitlines()[0].split("`")
+        self.assertEqual(fields[3], "http://192.168.1.75:5666")
+        self.assertEqual(fields[0], "custom_proxy_group=🏘 回家专用低延")
+        self.assertEqual(fields[1], "url-test")
+        self.assertEqual(fields[4], "600,,15")
+        self.assertEqual(result.splitlines()[1], other)
+
+    def test_override_is_idempotent_and_skips_untouched_lines(self):
+        overrides = CONFIG["ini_overrides"]
+        line = "custom_proxy_group=🏘 回家专用灾备`fallback`(回家)`http://192.168.1.75:5666`30,,15"
+        once = SYNC.apply_ini_overrides(line + "\n", overrides)
+        twice = SYNC.apply_ini_overrides(once, overrides)
+        self.assertEqual(once, twice)
+        self.assertIn("192.168.1.75:5666", once)
+        self.assertEqual(SYNC.apply_ini_overrides("", overrides), "\n")
+
+
+    def test_override_leaves_select_group_member_lists_alone(self):
+        # 组引用行里也会出现「回家专用灾备」这些字，匹配必须限定在组定义行和类型字段上
+        overrides = CONFIG["ini_overrides"]
+        line = "custom_proxy_group=🏡 回家节点`select`[]🏘 回家专用灾备`[]🏘 回家专用低延`[]🏘 回家专用手选`[]🚄 本地直连"
+        self.assertEqual(SYNC.apply_ini_overrides(line + "\n", overrides), line + "\n")
+
+
 class ValidationTests(unittest.TestCase):
     def test_invalid_node_regex_is_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:
