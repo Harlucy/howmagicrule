@@ -15,7 +15,6 @@
 | `clash-rule.ini` | 默认规则配置 |
 | `clash-rule-black.ini` | 黑名单模式 |
 | `clash-rule-general.ini` | 通用精简配置 |
-| `clash-rule-gocn.ini` | GoCN 相关配置 |
 | `clash-rule-manual.ini` | 手工调整版本 |
 | `clash-rule-black-manual.ini` | 黑名单手工调整版本 |
 | `clash-rule-manual-test.ini` | 手工规则测试版本 |
@@ -64,6 +63,8 @@ bash scripts/convert-list-to-yaml.sh
 python3 scripts/validate-rules.py
 ```
 
+`strip_rules` 会从生成后的 `rules/*.list` 中删除匹配行（个人内网域名与重复的 lululucy 后缀规则），
+即使上游仍然带着这些条目也不会进入发布结果；`ini_overrides` 则在 sanitize 之后强制覆盖指定 INI 字段（例如回家组测速地址）。
 `config/upstream-sync.json` 定义同步边界。同步只覆盖本仓库已经存在的规则源和 INI 入口，保留 `.MANUAL.list` 并把其中的本地规则重新合入对应 `.list`，过滤不启用的专用内网规则。`append_rules` 会把 SERVER 直连规则去重合入主直连规则。`gohome.list` 当前由 `force_empty` 强制保持空占位；硬件和网络准备好后，移除该配置项再填入实际规则。策略组的本地偏好也在该文件中维护，例如苹果服务默认把 `🚄 本地直连` 放在第一项。`scripts/normalize-rules.py` 会删除同一规则源内的完全重复项，避免定时更新不断累积规则。
 
 GitHub Actions 每 6 小时执行一次更新，下载结束后再次应用本地规则，再生成 YAML、校验并一起提交源文件和生成结果。只应用本地规则而不拉取上游时，可运行 `python3 scripts/sync-upstream.py --local-only`。自动化需将这些修改提交并推送后才会使用新流程。

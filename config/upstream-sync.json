@@ -31,6 +31,15 @@
   "append_rules": {
     "rules/A-ForcedDirect.list": ["rules/A-ForcedDirect.SERVER.list"]
   },
+  "strip_rules": [
+    "112700\\.xyz",
+    "096899\\.xyz",
+    "876521\\.xyz",
+    "ainq\\.de",
+    "nbsu\\.de",
+    "889966\\.de",
+    "^DOMAIN-SUFFIX,(?:yamlforge|conv|s|usccsny|usw)\\.lululucy\\.top$"
+  ],
   "ini_overrides": [
     {
       "match": "^custom_proxy_group=🏘 回家专用(低延|灾备)`(url-test|fallback)`",

@@ -204,6 +204,34 @@ def apply_ini_overrides(text: str, overrides: list[dict[str, object]]) -> str:
     return "\n".join(output) + "\n"
 
 
+def filter_stripped_lines(text: str, patterns: list[str]) -> str:
+    """Remove every line matching one of the local deny patterns."""
+    compiled = [re.compile(pattern) for pattern in patterns]
+    if not compiled:
+        return text
+    lines = text.splitlines()
+    kept = [line for line in lines if not any(regex.search(line.strip()) for regex in compiled)]
+    return "\n".join(kept) + "\n"
+
+
+def apply_strip_rules(config: dict[str, object]) -> None:
+    """Drop lines matching local deny patterns from generated rule sources.
+
+    Upstream still carries some personal/internal domains; this keeps them out of the
+    published rule sets no matter what upstream ships next.
+    """
+    patterns = [str(item) for item in config.get("strip_rules", [])]
+    if not patterns:
+        return
+    for path in sorted((ROOT / "rules").rglob("*.list")):
+        if path.name.endswith(".MANUAL.list"):
+            continue
+        text = path.read_text(encoding="utf-8")
+        stripped = filter_stripped_lines(text, patterns)
+        if stripped != text:
+            write_atomic(path, stripped)
+
+
 def apply_local_policy(config: dict[str, object]) -> None:
     """Restore local additions after both upstream sync and provider downloads."""
     for relative in config["remove"]:
@@ -239,6 +267,8 @@ def apply_local_policy(config: dict[str, object]) -> None:
 
     for relative in config.get("force_empty", []):
         write_atomic(ROOT / relative, "# Reserved for the future home network deployment.\n")
+
+    apply_strip_rules(config)
 
     overrides = config.get("ini_overrides", [])
     if overrides:

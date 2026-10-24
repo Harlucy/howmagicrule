@@ -852,7 +852,6 @@ payload:
  - PROCESS-NAME,com.kraken.trade
  - DOMAIN-SUFFIX,vote.gov
  - DOMAIN-SUFFIX,reshot.ai
- - DOMAIN-SUFFIX,webmail.nbsu.de
  - DOMAIN-SUFFIX,t-mobile.com
  - DOMAIN-SUFFIX,ultramobile.com
  - PROCESS-NAME,com.uvnv.ultramobile

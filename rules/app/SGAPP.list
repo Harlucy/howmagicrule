@@ -80,7 +80,6 @@ IP-CIDR6,2a0a:d687:f007::/48,no-resolve
 IP-CIDR,200.180.166.0/24,no-resolve
 IP-CIDR6,2602:f864:248::/48,no-resolve
 
-DOMAIN-SUFFIX,sgoracle0.112700.xyz
 IP-CIDR,92.112.21.0/24,no-resolve
 IP-CIDR,92.112.22.0/24,no-resolve
 IP-CIDR,92.112.23.0/24,no-resolve

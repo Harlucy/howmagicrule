@@ -144,6 +144,28 @@ class IniOverrideTests(unittest.TestCase):
         self.assertEqual(SYNC.apply_ini_overrides(line + "\n", overrides), line + "\n")
 
 
+class StripRuleTests(unittest.TestCase):
+    def test_strip_removes_internal_domains_but_keeps_own_hosts(self):
+        patterns = CONFIG["strip_rules"]
+        kept_hosts = [
+            "DOMAIN,conv.lululucy.top",
+            "DOMAIN,s.lululucy.top",
+            "DOMAIN-SUFFIX,example.com",
+        ]
+        stripped = [
+            "DOMAIN-SUFFIX,ushe0.112700.xyz",
+            "DOMAIN-SUFFIX,webmail.nbsu.de",
+            "DOMAIN-SUFFIX,mail.889966.de",
+            "DOMAIN-SUFFIX,yamlforge.lululucy.top",
+            "DOMAIN-SUFFIX,conv.lululucy.top",
+        ]
+        text = "\n".join(kept_hosts + stripped) + "\n"
+        result = SYNC.filter_stripped_lines(text, patterns)
+        self.assertEqual(result, "\n".join(kept_hosts) + "\n")
+        # 精确主机（DOMAIN）不能被后缀规则误删
+        self.assertIn("DOMAIN,conv.lululucy.top", result)
+
+
 class ValidationTests(unittest.TestCase):
     def test_invalid_node_regex_is_rejected(self):
         with tempfile.TemporaryDirectory() as temporary:

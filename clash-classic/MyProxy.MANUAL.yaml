@@ -115,7 +115,6 @@ payload:
  - DOMAIN-SUFFIX,agilebits.com
  - DOMAIN-SUFFIX,ooklaserver.net
  - DOMAIN-SUFFIX,freeembyguide.eu.org
- - DOMAIN,mail.889966.de
  - DOMAIN-SUFFIX,larksuite.com
  - DOMAIN-SUFFIX,larksuitepre.com
  - DOMAIN-SUFFIX,larksuite.com.ttdns1.com
@@ -148,13 +147,9 @@ payload:
  - DOMAIN-SUFFIX,adjust.com
  - DOMAIN-SUFFIX,tawk.to
  - DOMAIN-SUFFIX,api.smooch.io
- - DOMAIN-SUFFIX,news.112700.xyz
  - DOMAIN-SUFFIX,iswsh.com
  - DOMAIN-SUFFIX,img.wush.cc
- - DOMAIN-SUFFIX,ainq.de
  - DOMAIN-SUFFIX,workspace.org
- - DOMAIN,mail.112700.xyz
- - DOMAIN,mail.ainq.de
  - DOMAIN,mail.iswsh.com
  - DOMAIN,mail.somnifex.com
  - DOMAIN-SUFFIX,imagehaha.com
@@ -164,9 +159,6 @@ payload:
  - DOMAIN-SUFFIX,papakatsu.co
  - DOMAIN-SUFFIX,qpic.ws
  - DOMAIN-SUFFIX,2img.org
- - DOMAIN-SUFFIX,hbsb.096899.xyz
- - DOMAIN-SUFFIX,opengist.096899.xyz
- - DOMAIN-SUFFIX,i.096899.xyz
  - DOMAIN-SUFFIX,20img.com
  - DOMAIN-SUFFIX,21img.com
  - DOMAIN-SUFFIX,22img.com
@@ -195,7 +187,6 @@ payload:
  - DOMAIN-SUFFIX,akoi.cc
  - DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
  - DOMAIN-SUFFIX,kdcloud.uk
- - DOMAIN-SUFFIX,apanel.876521.xyz
  - DOMAIN-SUFFIX,koodog.com
  - DOMAIN-SUFFIX,0085.top
  - DOMAIN-SUFFIX,avatargpt.xyz
