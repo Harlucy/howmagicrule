@@ -10,7 +10,6 @@
 # TOTAL: 13
 # UPDATED: 2025-06-06 09:17:47
 # UPDATED: 2025-06-06 09:18:50
-# WorkBuddy CN
 # 三星应用商店
 # 兜底LAN
 # 其他
@@ -87,7 +86,6 @@ DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,tun.tizi888.me
 DOMAIN-SUFFIX,u-tools.cn
 DOMAIN-SUFFIX,vivo.com.cn
-DOMAIN-SUFFIX,workbuddy.cn
 DOMAIN-SUFFIX,worldfirst.com
 DOMAIN-SUFFIX,worldfirst.com.cn
 DOMAIN-SUFFIX,xterminal.cn
@@ -97,6 +95,4 @@ IP-CIDR,152.136.227.0/24,no-resolve
 IP-CIDR,192.168.0.0/16,no-resolve
 IP-CIDR,220.205.16.0/24,no-resolve
 IP-CIDR6,2402:4e00:c050::/48,no-resolve
-PROCESS-NAME,WorkBuddy.exe
 PROCESS-NAME,com.sec.android.app.samsungapps
-PROCESS-PATH-REGEX,(?i).*[/\\]WorkBuddy(?:\.exe)?$

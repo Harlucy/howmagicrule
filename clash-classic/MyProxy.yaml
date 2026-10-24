@@ -63,7 +63,6 @@ payload:
  - DOMAIN-SUFFIX,cybermania.ws
  - DOMAIN-SUFFIX,dalao.net
  - DOMAIN-SUFFIX,darkreader.org
- - DOMAIN-SUFFIX,deepflood.com
  - DOMAIN-SUFFIX,deeplx.org
  - DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
  - DOMAIN-SUFFIX,docker.com
@@ -92,7 +91,6 @@ payload:
  - DOMAIN-SUFFIX,hostloc.com
  - DOMAIN-SUFFIX,huggingface.co
  - DOMAIN-SUFFIX,hulihanman.com
- - DOMAIN-SUFFIX,idcflare.com
  - DOMAIN-SUFFIX,idoujiang.com
  - DOMAIN-SUFFIX,im.ge
  - DOMAIN-SUFFIX,imagehaha.com
@@ -127,11 +125,8 @@ payload:
  - DOMAIN-SUFFIX,larksuiteimgboe.com
  - DOMAIN-SUFFIX,larksuiteimgpre.com
  - DOMAIN-SUFFIX,larksuitepre.com
- - DOMAIN-SUFFIX,ldstatic.com
  - DOMAIN-SUFFIX,lf6-cdnjs.zstaticcdn.com
  - DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
- - DOMAIN-SUFFIX,linux.do
- - DOMAIN-SUFFIX,linuxdo.org
  - DOMAIN-SUFFIX,longtengxiaoshuo.org
  - DOMAIN-SUFFIX,lscr.io
  - DOMAIN-SUFFIX,m.dybz123.com
@@ -206,7 +201,6 @@ payload:
  - DOMAIN-SUFFIX,tawk.to
  - DOMAIN-SUFFIX,tencentcloud.com
  - DOMAIN-SUFFIX,tevau.io
- - DOMAIN-SUFFIX,tgalileo.com
  - DOMAIN-SUFFIX,torrentmac.net
  - DOMAIN-SUFFIX,ubuntu.com
  - DOMAIN-SUFFIX,uhdnow.com
@@ -223,7 +217,6 @@ payload:
  - DOMAIN-SUFFIX,wanxai.com
  - DOMAIN-SUFFIX,wap.ac
  - DOMAIN-SUFFIX,wap.ciweimao.com
- - DOMAIN-SUFFIX,workbuddy.ai
  - DOMAIN-SUFFIX,workspace.org
  - DOMAIN-SUFFIX,wotransfer.com
  - DOMAIN-SUFFIX,wuyoucloud.cloud
@@ -242,11 +235,9 @@ payload:
  - IP-CIDR6,2a0f:7802:e2c0::/48,no-resolve
  - IP-CIDR6,2a12:f8c1:50:8::/64,no-resolve
  - IP-CIDR6,2a13:e2c4:fefb::/48,no-resolve
- - PROCESS-NAME,WorkBuddyAI.exe
  - PROCESS-NAME,ai.qwenlm.chat.android
  - PROCESS-NAME,com.nextpls.starryblu
  - PROCESS-NAME,money.stables
  - PROCESS-NAME,uni.UNI2317D55
- - PROCESS-PATH-REGEX,(?i).*[/\\]WorkBuddyAI(?:\.exe)?$
  - DOMAIN,eu1.workspace.org
  - IP-CIDR,193.108.130.81/32,no-resolve

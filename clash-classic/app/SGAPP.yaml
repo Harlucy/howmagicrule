@@ -16,7 +16,6 @@ payload:
  - IP-CIDR6,2603:1063::/38,no-resolve
  - IP-CIDR6,2620:1ec:6::/48,no-resolve
  - IP-CIDR6,2620:1ec:40::/42,no-resolve
- - DOMAIN-SUFFIX,sg.tgalileo.com
  - DOMAIN-SUFFIX,ap-south-1.amazonaws.com
  - DOMAIN-SUFFIX,ap-northeast-1.amazonaws.com
  - DOMAIN-SUFFIX,ap-east-1.amazonaws.com
@@ -49,8 +48,6 @@ payload:
  - DOMAIN-SUFFIX,mytokenpocket.vip
  - PROCESS-NAME,com.binance.dev
  - PROCESS-NAME,vip.mytokenpocket
- - IP-CIDR,82.109.97.0/24,no-resolve
- - IP-CIDR6,2a0a:d687:f007::/48,no-resolve
  - IP-CIDR,200.180.166.0/24,no-resolve
  - IP-CIDR6,2602:f864:248::/48,no-resolve
  - IP-CIDR,92.112.21.0/24,no-resolve

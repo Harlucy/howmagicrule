@@ -68,7 +68,6 @@ payload:
  - DOMAIN-SUFFIX,tun.tizi888.me
  - DOMAIN-SUFFIX,u-tools.cn
  - DOMAIN-SUFFIX,vivo.com.cn
- - DOMAIN-SUFFIX,workbuddy.cn
  - DOMAIN-SUFFIX,worldfirst.com
  - DOMAIN-SUFFIX,worldfirst.com.cn
  - DOMAIN-SUFFIX,xterminal.cn
@@ -78,6 +77,4 @@ payload:
  - IP-CIDR,192.168.0.0/16,no-resolve
  - IP-CIDR,220.205.16.0/24,no-resolve
  - IP-CIDR6,2402:4e00:c050::/48,no-resolve
- - PROCESS-NAME,WorkBuddy.exe
  - PROCESS-NAME,com.sec.android.app.samsungapps
- - PROCESS-PATH-REGEX,(?i).*[/\\]WorkBuddy(?:\.exe)?$
