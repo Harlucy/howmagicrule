@@ -122,6 +122,9 @@ DST-PORT,9995
 SRC-PORT,9995
 IP-CIDR,192.200.0.0/24,no-resolve
 IP-CIDR6,2606:B740:49::/48,no-resolve
+DOMAIN-SUFFIX,symcd.com
+PROCESS-NAME,PgyVisitorEntSvr.exe
+PROCESS-NAME,PgyVisitorEntSvr
 PROCESS-NAME,zerotier
 PROCESS-NAME,zerotier-one
 PROCESS-NAME,zerotier-cli
@@ -241,13 +244,8 @@ IP-CIDR,45.137.180.230/32,no-resolve
 # 喵云CN
 DOMAIN-SUFFIX,aip.acgf.vip
 DOMAIN-SUFFIX,apii.acgf.vip
-DOMAIN,prometheus.lululucy.top
-DOMAIN,s.lululucy.top
-DOMAIN,sub.lululucy.top
-DOMAIN,forge.lululucy.top
-DOMAIN,conv.lululucy.top
 
-# Local additions: A-ForcedDirect.SERVER.list
+
 AND,((DOMAIN-SUFFIX,870b19d7f93598acbc7f.thisgourl.xyz),(OR,((DST-PORT,57031),(SRC-PORT,57031))))
 AND,((DOMAIN-SUFFIX,aws-link1.lxyun.xyz),(OR,((DST-PORT,443),(SRC-PORT,443))))
 AND,((DOMAIN-SUFFIX,aws-link13.lxyun.xyz),(OR,((DST-PORT,443),(SRC-PORT,443))))
@@ -1952,3 +1950,12 @@ AND,((IP-CIDR6,2606:4700:51::70bd:b8bc/128,no-resolve),(OR,((DST-PORT,443),(SRC-
 AND,((IP-CIDR6,2606:4700:57:406a:8fdb:726:3e79:9d05/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
 AND,((IP-CIDR6,2a05:d014:16b5:2200:b67c:48e5:6cb0:d5ed/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
 AND,((IP-CIDR6,2a05:d01c:828:ef00:61bc:e9bd:c9ae:650e/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
+
+
+
+# Local additions: A-ForcedDirect.MANUAL.list
+DOMAIN,prometheus.lululucy.top
+DOMAIN,s.lululucy.top
+DOMAIN,sub.lululucy.top
+DOMAIN,forge.lululucy.top
+DOMAIN,conv.lululucy.top
