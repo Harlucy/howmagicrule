@@ -80,4 +80,4 @@ payload:
  - IP-CIDR6,2604:4500:3:80::10/128,no-resolve
  - IP-CIDR6,2604:4500:5:245::10/128,no-resolve
  - IP-CIDR6,2604:4500:8:24a::10/128,no-resolve
- - IP-CIDR6,2604:4500:9:58::10/128,no-resolve
+ - IP-CIDR6,2604:4500:9:58::9/128,no-resolve
