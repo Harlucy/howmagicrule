@@ -74,8 +74,10 @@ payload:
  - DOMAIN-SUFFIX,resilio.com
  - DOMAIN-SUFFIX,getsync.com
  - IP-CIDR,23.111.157.86/32,no-resolve
+ - IP-CIDR,66.165.233.194/32,no-resolve
  - IP-CIDR,66.165.255.194/32,no-resolve
  - IP-CIDR,66.206.5.74/32,no-resolve
  - IP-CIDR6,2604:4500:3:80::10/128,no-resolve
  - IP-CIDR6,2604:4500:5:245::10/128,no-resolve
  - IP-CIDR6,2604:4500:8:24a::10/128,no-resolve
+ - IP-CIDR6,2604:4500:9:58::9/128,no-resolve
