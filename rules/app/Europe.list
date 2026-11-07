@@ -28,7 +28,6 @@ DOMAIN-SUFFIX,moldtelecom.md
 DOMAIN-SUFFIX,usercentrics.eu
 DOMAIN-SUFFIX,ftp1.hostypanel.com
 DOMAIN-SUFFIX,ftp2.hostypanel.com
-IP-CIDR,49.12.135.157/32,no-resolve
 
 # N26银行
 DOMAIN-SUFFIX,n26.com
@@ -80,10 +79,4 @@ DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,eu-west-2.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,eu-east-1.prod.pr.panorama.console.api.aws
 
-# VPS
-IP-CIDR,185.244.194.0/24,no-resolve
-IP-CIDR,193.160.0.0/16,no-resolve
-IP-CIDR6,2602:f988:84::/48,no-resolve
-IP-CIDR6,2001:41d0:a::/48,no-resolve
-IP-CIDR6,2a03:4000:27::/48,no-resolve
 

@@ -8,7 +8,6 @@
 # DOMAIN-SUFFIX: 5
 # DOMAIN: 1
 # DOMAIN: 3
-# JJFLY GB NAT
 # MINIMAX/海螺AI
 # NAME: Docker
 # NAME: Notion
@@ -24,14 +23,12 @@
 # TevauPay
 # UPDATED: 2025-06-06 09:17:43
 # UPDATED: 2025-06-06 09:17:46
-# VPS
 # afusekt
 # nebius
 # phantom加密钱包
 # read
 # 七牛云东南亚
 # 常用论文投稿
-# 楼云GB NAT
 # 硅基流动国际站
 # 腾讯云国际
 AND,((IP-ASN,31898),(NOT,((GEOIP,CN))))
@@ -260,15 +257,6 @@ DOMAIN-SUFFIX,x360xs.com
 DOMAIN-SUFFIX,xaoxuu.com
 DOMAIN-SUFFIX,xbiquge.laa
 DOMAIN-SUFFIX,yaoluxs.com
-IP-CIDR,178.94.142.0/24,no-resolve
-IP-CIDR,185.125.190.0/24,no-resolve
-IP-CIDR,45.192.248.0/22,no-resolve
-IP-CIDR,46.33.10.0/24,no-resolve
-IP-CIDR,82.153.64.0/22,no-resolve
-IP-CIDR,82.39.133.0/24,no-resolve
-IP-CIDR6,2a0f:7802:e2c0::/48,no-resolve
-IP-CIDR6,2a12:f8c1:50:8::/64,no-resolve
-IP-CIDR6,2a13:e2c4:fefb::/48,no-resolve
 PROCESS-NAME,ai.qwenlm.chat.android
 PROCESS-NAME,com.nextpls.starryblu
 PROCESS-NAME,money.stables

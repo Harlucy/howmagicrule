@@ -90,18 +90,7 @@ PROCESS-NAME,uni.UNI2317D55
 DOMAIN-SUFFIX,editorialmanager.com
 DOMAIN-SUFFIX,mc.manuscriptcentral.com
 
-# VPS
-# 楼云GB NAT
-IP-CIDR,82.39.133.0/24,no-resolve
-# JJFLY GB NAT
-IP-CIDR,46.33.10.0/24,no-resolve
 
-IP-CIDR,45.192.248.0/22,no-resolve
-IP-CIDR,82.153.64.0/22,no-resolve
-IP-CIDR,178.94.142.0/24,no-resolve
-IP-CIDR6,2a12:f8c1:50:8::/64,no-resolve
-IP-CIDR6,2a13:e2c4:fefb::/48,no-resolve
-IP-CIDR6,2a0f:7802:e2c0::/48,no-resolve
 
 # Other
 DOMAIN-SUFFIX,pylogmon.com
@@ -231,7 +220,6 @@ DOMAIN-SUFFIX,jetkvm.com
 DOMAIN-SUFFIX,hostbrr.com
 DOMAIN-SUFFIX,api-cdn-cloud-comebackqqt.trafficmanager.net
 DOMAIN-SUFFIX,fwupd.org
-IP-CIDR,185.125.190.0/24,no-resolve
 DOMAIN-SUFFIX,prodregistryv2.org
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,pypi.org

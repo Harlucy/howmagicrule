@@ -72,9 +72,7 @@ payload:
  - DOMAIN-SUFFIX,worldfirst.com.cn
  - DOMAIN-SUFFIX,xterminal.cn
  - DOMAIN-SUFFIX,zjdx.4444442.xyz
- - IP-CIDR,110.42.62.0/24,no-resolve
  - IP-CIDR,192.168.0.0/16,no-resolve
- - IP-CIDR,220.205.16.0/24,no-resolve
  - IP-CIDR6,2402:4e00:c050::/48,no-resolve
  - PROCESS-NAME,com.sec.android.app.samsungapps
  - PROCESS-PATH-REGEX,(?i).*[/\\]WorkBuddy(?:\.exe)?$
