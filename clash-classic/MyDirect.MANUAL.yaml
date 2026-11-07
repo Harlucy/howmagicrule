@@ -48,7 +48,6 @@ payload:
  - DOMAIN-SUFFIX,autodl.art
  - DOMAIN-SUFFIX,autodl.com
  - DOMAIN-SUFFIX,speedtest.wush.cc
- - IP-CIDR,152.136.227.0/24,no-resolve
  - IP-CIDR6,2402:4e00:c050::/48,no-resolve
  - DOMAIN-SUFFIX,appkcc.com
  - DOMAIN-SUFFIX,lanzou.com

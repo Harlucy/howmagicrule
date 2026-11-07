@@ -12,7 +12,6 @@ payload:
  - DOMAIN-SUFFIX,hailuoai.com
  - DOMAIN-SUFFIX,siliconflow.com
  - DOMAIN-SUFFIX,attemptd.work
- - IP-CIDR,49.232.25.145/32,no-resolve
  - DOMAIN-SUFFIX,longtengxiaoshuo.org
  - DOMAIN-SUFFIX,kmh004.com
  - DOMAIN-SUFFIX,kt.bqg123a.top

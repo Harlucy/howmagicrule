@@ -29,7 +29,6 @@ payload:
  - DOMAIN-SUFFIX,ftp1.hostypanel.com
  - DOMAIN-SUFFIX,ftp2.hostypanel.com
  - IP-CIDR,49.12.135.157/32,no-resolve
- - IP-CIDR,157.90.37.30/32,no-resolve
  - DOMAIN-SUFFIX,n26.com
  - DOMAIN-SUFFIX,n26.de
  - DOMAIN-SUFFIX,n26.net
@@ -65,7 +64,6 @@ payload:
  - DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
  - DOMAIN-SUFFIX,eu-west-2.prod.pr.panorama.console.api.aws
  - DOMAIN-SUFFIX,eu-east-1.prod.pr.panorama.console.api.aws
- - IP-CIDR,107.175.59.0/24,no-resolve
  - IP-CIDR,185.244.194.0/24,no-resolve
  - IP-CIDR,193.160.0.0/16,no-resolve
  - IP-CIDR6,2602:f988:84::/48,no-resolve
