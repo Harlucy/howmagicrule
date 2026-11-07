@@ -78,3 +78,7 @@ payload:
  - IP-CIDR,220.205.16.0/24,no-resolve
  - IP-CIDR6,2402:4e00:c050::/48,no-resolve
  - PROCESS-NAME,com.sec.android.app.samsungapps
+ - PROCESS-PATH-REGEX,(?i).*[/\\]WorkBuddy(?:\.exe)?$
+ - DOMAIN-SUFFIX,deepseek.com
+ - DOMAIN-SUFFIX,tencentcloud.com
+ - PROCESS-NAME,com.deepseek.chat

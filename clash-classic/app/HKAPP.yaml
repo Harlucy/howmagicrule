@@ -21,3 +21,14 @@ payload:
  - IP-CIDR6,2401:b60:5::/48,no-resolve
  - IP-CIDR6,2a0e:dc0:5::/48,no-resolve
  - IP-CIDR6,2400:e920:0:a::/64,no-resolve
+ - DOMAIN-SUFFIX,ap-east-1.amazonaws.com
+ - DOMAIN-SUFFIX,s3-ap-east-1.amazonaws.com
+ - DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
+ - DOMAIN-SUFFIX,ap-south-1.amazonaws.com
+ - DOMAIN-SUFFIX,s3-ap-south-1.amazonaws.com
+ - DOMAIN-SUFFIX,ap-south-1.prod.pr.panorama.console.api.aws
+ - DOMAIN-SUFFIX,ap-west-1.amazonaws.com
+ - DOMAIN-SUFFIX,s3-ap-west-1.amazonaws.com
+ - DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
+ - DOMAIN-SUFFIX,sg.tgalileo.com
+ - DOMAIN-SUFFIX,iflix.com
