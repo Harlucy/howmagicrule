@@ -191,3 +191,4 @@ payload:
  - DOMAIN-SUFFIX,bugsnag.com
  - DOMAIN-SUFFIX,pypi.org
  - DOMAIN-SUFFIX,changshenglou.com
+ - IP-CIDR,85.155.177.0/24,no-resolve

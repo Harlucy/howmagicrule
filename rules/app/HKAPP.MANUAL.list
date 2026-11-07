@@ -16,3 +16,7 @@ IP-CIDR,185.241.42.0/24,no-resolve
 IP-CIDR,149.88.87.0/24,no-resolve
 
 # Other
+# 自建节点（按国别）
+IP-CIDR,149.104.4.0/24,no-resolve  # 香港 YT-CMI
+IP-CIDR,186.244.250.0/24,no-resolve  # 香港野草云
+IP-CIDR6,2001:df1:7880::/48,no-resolve  # 香港野草云 v6

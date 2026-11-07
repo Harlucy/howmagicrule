@@ -63,3 +63,4 @@ payload:
  - DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
  - DOMAIN-SUFFIX,eu-west-2.prod.pr.panorama.console.api.aws
  - DOMAIN-SUFFIX,eu-east-1.prod.pr.panorama.console.api.aws
+ - IP-CIDR,82.139.236.0/24,no-resolve

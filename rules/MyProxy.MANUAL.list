@@ -224,3 +224,5 @@ DOMAIN-SUFFIX,prodregistryv2.org
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,changshenglou.com
+# 自建节点（按国别；韩国无独立规则集，落主要代理）
+IP-CIDR,85.155.177.0/24,no-resolve  # 韩国 KT（KT 家宽落地）

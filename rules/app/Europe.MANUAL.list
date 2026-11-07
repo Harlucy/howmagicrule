@@ -78,4 +78,5 @@ DOMAIN-SUFFIX,eu-north-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,eu-west-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,eu-west-2.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,eu-east-1.prod.pr.panorama.console.api.aws
-
+# 自建节点（按国别）
+IP-CIDR,82.139.236.0/24,no-resolve  # 德国 DE-9929
