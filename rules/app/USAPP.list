@@ -397,8 +397,6 @@ IP-CIDR6,2602:fa4f:900::/48,no-resolve
 IP-CIDR6,2605:6f01:2000::/48,no-resolve
 IP-CIDR6,2607:9000:800::/48,no-resolve
 IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
-IP-CIDR6,2602:f92a:101::/48,no-resolve
-IP-CIDR,103.11.79.0/24,no-resolve
-
-# Local additions: USAPP.MANUAL.list
+# 自建节点（按国别）
 IP-CIDR6,2602:f92a:101::/48,no-resolve  # 荔枝/LAX v6
+IP-CIDR,103.11.79.0/24,no-resolve

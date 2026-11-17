@@ -16,24 +16,7 @@ IP-CIDR,185.241.42.0/24,no-resolve
 IP-CIDR,149.88.87.0/24,no-resolve
 
 # Other
-
-# --- 原 SGAPP 拆分：AWS 亚太（非东京区）+ 东南亚服务 ---
-DOMAIN-SUFFIX,ap-east-1.amazonaws.com
-DOMAIN-SUFFIX,s3-ap-east-1.amazonaws.com
-DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,ap-south-1.amazonaws.com
-DOMAIN-SUFFIX,s3-ap-south-1.amazonaws.com
-DOMAIN-SUFFIX,ap-south-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,ap-west-1.amazonaws.com
-DOMAIN-SUFFIX,s3-ap-west-1.amazonaws.com
-DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,sg.tgalileo.com
-DOMAIN-SUFFIX,iflix.com
-IP-CIDR,149.104.4.0/24,no-resolve
-IP-CIDR,186.244.250.0/24,no-resolve
-IP-CIDR6,2001:df1:7880::/48,no-resolve
-
-# Local additions: HKAPP.MANUAL.list
+# 自建节点（按国别）
 IP-CIDR,149.104.4.0/24,no-resolve  # 香港 YT-CMI
 IP-CIDR,186.244.250.0/24,no-resolve  # 香港野草云
 IP-CIDR6,2001:df1:7880::/48,no-resolve  # 香港野草云 v6
