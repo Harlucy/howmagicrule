@@ -1,7 +1,5 @@
 payload:
  - DOMAIN-REGEX,.*\.mcdn\.bilivideo\.(com|cn|net)$
- - PROCESS-NAME,com.bilibili.bilithings
- - PROCESS-NAME,com.xiaodianshi.tv.yst
  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
  - DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3z.ourdvsss.com
@@ -125,9 +123,3 @@ payload:
  - IP-CIDR,120.92.153.217/32,no-resolve
  - IP-CIDR,134.175.207.130/32,no-resolve
  - IP-CIDR,203.107.1.0/24,no-resolve
- - PROCESS-NAME,com.bilibili.app.blue
- - PROCESS-NAME,com.bilibili.app.in
- - PROCESS-NAME,com.bilibili.comic
- - PROCESS-NAME,com.bilibili.comic.intl
- - PROCESS-NAME,tv.danmaku.bili
- - PROCESS-NAME,tv.danmaku.bilibilihd

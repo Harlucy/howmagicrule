@@ -8,7 +8,6 @@ payload:
  - DOMAIN-SUFFIX,engagement.ai
  - DOMAIN-SUFFIX,revved.com
  - DOMAIN-SUFFIX,qontak.com
- - PROCESS-NAME,transferwise
  - DOMAIN-SUFFIX,wise.com
  - DOMAIN-SUFFIX,moscwise.com
  - DOMAIN-KEYWORD,transferwise
@@ -17,12 +16,10 @@ payload:
  - DOMAIN-SUFFIX,sentry.io
  - DOMAIN-SUFFIX,braze.com
  - DOMAIN-SUFFIX,kraken.com
- - PROCESS-NAME,com.kraken.trade
  - DOMAIN-SUFFIX,vote.gov
  - DOMAIN-SUFFIX,reshot.ai
  - DOMAIN-SUFFIX,t-mobile.com
  - DOMAIN-SUFFIX,ultramobile.com
- - PROCESS-NAME,com.uvnv.ultramobile
  - DOMAIN-SUFFIX,att.com
  - DOMAIN-KEYWORD,voice.google
  - DOMAIN-KEYWORD,voice.telephony
@@ -58,7 +55,6 @@ payload:
  - DOMAIN-SUFFIX,vm.talkatone.com
  - DOMAIN-SUFFIX,tenor.com
  - DOMAIN-SUFFIX,talkatone.com
- - PROCESS-NAME,com.talkatone.android
  - DOMAIN-SUFFIX,agkn.com
  - DOMAIN-SUFFIX,cohere.com
  - DOMAIN-SUFFIX,crashlytics.com
@@ -74,7 +70,6 @@ payload:
  - IP-CIDR,69.46.75.0/24,no-resolve
  - DOMAIN-SUFFIX,goo.gle
  - DOMAIN-SUFFIX,one.google.com
- - PROCESS-NAME,com.paypal.android.p2pmobile
  - DOMAIN-SUFFIX,liberty.edu
  - DOMAIN-SUFFIX,sheerid.com
  - DOMAIN-SUFFIX,umass.edu

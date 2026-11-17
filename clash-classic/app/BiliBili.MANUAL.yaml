@@ -1,4 +1,2 @@
 payload:
  - DOMAIN-REGEX,.*\.mcdn\.bilivideo\.(com|cn|net)$
- - PROCESS-NAME,com.bilibili.bilithings
- - PROCESS-NAME,com.xiaodianshi.tv.yst

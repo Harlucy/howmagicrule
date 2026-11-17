@@ -15,7 +15,5 @@ payload:
  - DOMAIN-KEYWORD,1drv
  - DOMAIN-KEYWORD,onedrive
  - DOMAIN-KEYWORD,skydrive
- - PROCESS-NAME,OneDrive
- - PROCESS-NAME,OneDriveUpdater
  - GEOSITE,onedrive
  - DOMAIN-SUFFIX,my.microsoftpersonalcontent.com

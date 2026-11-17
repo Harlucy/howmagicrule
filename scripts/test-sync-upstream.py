@@ -89,6 +89,7 @@ class SyncIntegrationTests(unittest.TestCase):
             self.assertEqual(source.read_text(encoding="utf-8"), first)
 
 
+@unittest.skip("上游同步已停用，clash-rule-ad.ini 不再生成")
 class DerivedIniTests(unittest.TestCase):
     def test_derived_entry_is_generated_before_its_anchor_and_is_stable(self):
         with tempfile.TemporaryDirectory() as temporary:

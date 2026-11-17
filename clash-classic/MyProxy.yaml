@@ -225,10 +225,6 @@ payload:
  - DOMAIN-SUFFIX,xaoxuu.com
  - DOMAIN-SUFFIX,xbiquge.laa
  - DOMAIN-SUFFIX,yaoluxs.com
- - PROCESS-NAME,ai.qwenlm.chat.android
- - PROCESS-NAME,com.nextpls.starryblu
- - PROCESS-NAME,money.stables
- - PROCESS-NAME,uni.UNI2317D55
  - DOMAIN,eu1.workspace.org
  - IP-CIDR,193.108.130.81/32,no-resolve
  - DOMAIN-SUFFIX,cloudflare.com
@@ -263,3 +259,4 @@ payload:
  - IP-CIDR6,2405:8100::/32,no-resolve
  - IP-CIDR6,2a06:98c0::/29,no-resolve
  - IP-CIDR6,2c0f:f248::/32,no-resolve
+ - IP-CIDR,85.155.177.0/24,no-resolve

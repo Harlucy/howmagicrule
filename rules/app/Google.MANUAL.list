@@ -12,9 +12,6 @@ DOMAIN-SUFFIX,mail.google.com
 DOMAIN-SUFFIX,notebooklm.google.com
 DOMAIN-SUFFIX,notebooklm.google
 DOMAIN-SUFFIX,antigravity.google
-PROCESS-NAME,com.google.android.apps.bard
-PROCESS-NAME,com.google.android.apps.gemini
-PROCESS-NAME,com.google.android.apps.labs.language.tailwind
 
 # Google Play other
 DOMAIN-SUFFIX,play.app

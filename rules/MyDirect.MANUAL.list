@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,tailscale.com
 IP-CIDR,192.168.0.0/16,no-resolve
 
 # 三星应用商店
-PROCESS-NAME,com.sec.android.app.samsungapps
 
 # 其他
 DOMAIN-SUFFIX,pylogmon.cn

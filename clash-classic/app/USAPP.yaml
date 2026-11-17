@@ -137,9 +137,6 @@ payload:
  - DOMAIN-SUFFIX,viacomcbspressexpress.com
  - DOMAIN-SUFFIX,watchespn.com
  - DOMAIN-SUFFIX,wwwhuluplus.com
- - PROCESS-NAME,com.cbs.app
- - PROCESS-NAME,com.hulu.plus
- - PROCESS-NAME,com.showtime.standalone
  - DOMAIN-SUFFIX,db.tt
  - DOMAIN-SUFFIX,dropbox-dns.com
  - DOMAIN-SUFFIX,dropbox.com

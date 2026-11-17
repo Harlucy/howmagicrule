@@ -9,7 +9,6 @@ DOMAIN-SUFFIX,qwenlm.ai
 DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,wanxai.com
 DOMAIN-SUFFIX,wan.video
-PROCESS-NAME,ai.qwenlm.chat.android
 
 # MINIMAX/海螺AI
 DOMAIN-SUFFIX,minimax.io
@@ -76,7 +75,6 @@ DOMAIN-SUFFIX,rsf-as0.qiniuapi.com
 # Starryblu熊猫速汇
 DOMAIN-SUFFIX,starryblu.com
 DOMAIN-SUFFIX,pandaremit.com
-PROCESS-NAME,com.nextpls.starryblu
 
 # phantom加密钱包
 DOMAIN-SUFFIX,phantom.com
@@ -84,7 +82,6 @@ DOMAIN-SUFFIX,phantom.app
 
 # TevauPay
 DOMAIN-SUFFIX,tevau.io
-PROCESS-NAME,uni.UNI2317D55
 
 # 常用论文投稿
 DOMAIN-SUFFIX,editorialmanager.com
@@ -110,7 +107,6 @@ DOMAIN,nat.qq.pw
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,immersivetranslate.com
 DOMAIN-SUFFIX,stables.money
-PROCESS-NAME,money.stables
 DOMAIN-SUFFIX,vcc.center
 DOMAIN,pt.luckpt.de
 DOMAIN,ny.4444441.xyz

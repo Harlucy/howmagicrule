@@ -37,7 +37,6 @@ DOMAIN-SUFFIX,tospotify.com
 DOMAIN-KEYWORD,spotify
 IP-CIDR,104.154.127.126/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
-PROCESS-NAME,com.spotify.music
 
 # 内容：Spotify
 # 数量：9条

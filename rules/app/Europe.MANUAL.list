@@ -23,7 +23,6 @@ DOMAIN-SUFFIX,customercontrolpanel.de
 DOMAIN-SUFFIX,betterbird.eu
 DOMAIN-SUFFIX,api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me
 DOMAIN-SUFFIX,ifastgb.com
-PROCESS-NAME,com.ifast.gb
 DOMAIN-SUFFIX,moldtelecom.md
 DOMAIN-SUFFIX,usercentrics.eu
 DOMAIN-SUFFIX,ftp1.hostypanel.com
@@ -34,10 +33,8 @@ DOMAIN-SUFFIX,n26.com
 DOMAIN-SUFFIX,n26.de
 DOMAIN-SUFFIX,n26.net
 DOMAIN-SUFFIX,tech26.de
-PROCESS-NAME,de.number26.android
 
 # Bybit
-PROCESS-NAME,com.bybit.app
 DOMAIN-SUFFIX,bybit.app
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.biz
@@ -62,7 +59,6 @@ DOMAIN-SUFFIX,ether.fi
 
 # MistralAI
 DOMAIN-SUFFIX,mistral.ai
-PROCESS-NAME,ai.mistral.chat
 
 # Amazon Simple Storage
 DOMAIN-SUFFIX,eu-north-1.amazonaws.com

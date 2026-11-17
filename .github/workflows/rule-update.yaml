@@ -22,12 +22,8 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
 
-    - name: Check upstream sync regressions
-      run: python3 scripts/test-sync-upstream.py
-
-    - name: Sync selected rules from upstream
-      run: |
-        python3 scripts/sync-upstream.py
+    # 上游同步已停用：规则只来自本地 MANUAL 文件与下方各公开源下载步骤。
+    # 本地合入、剥离与空占位策略仍由流程末尾的 sync-upstream.py --local-only 应用。
 
     - name: Update ForcedDirect.SERVER.list
       run: |

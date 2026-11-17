@@ -5,3 +5,5 @@ clash-classic/LargePrivacy.yaml
 clash-classic/PlayGame.yaml
 clash-classic/app/TWAPP.MANUAL.yaml
 clash-classic/gohome.yaml
+clash-classic/app/BiliBiliGlo.yaml
+clash-classic/app/BiliBiliGlo.MANUAL.yaml

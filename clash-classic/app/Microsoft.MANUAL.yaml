@@ -1,8 +1,6 @@
 payload:
  - DOMAIN-REGEX,^.*store.*microsoft\.com$
  - DOMAIN-REGEX,^[^.]*store[^.]*\.[^.]*\.*microsoft\.com$
- - PROCESS-NAME,WinStore.APP.exe
- - PROCESS-NAME,WinStore.APP
  - DOMAIN-SUFFIX,msftauth.net
  - DOMAIN-SUFFIX,msauth.net
  - DOMAIN-SUFFIX,account.microsoft.com

@@ -7,7 +7,6 @@ payload:
  - DOMAIN-SUFFIX,tailscale.io
  - DOMAIN-SUFFIX,tailscale.com
  - IP-CIDR,192.168.0.0/16,no-resolve
- - PROCESS-NAME,com.sec.android.app.samsungapps
  - DOMAIN-SUFFIX,pylogmon.cn
  - DOMAIN-SUFFIX,snssdk.com
  - DOMAIN-SUFFIX,bvvvvvvv7f.com

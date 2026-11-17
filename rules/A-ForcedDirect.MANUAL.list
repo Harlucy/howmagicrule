@@ -54,14 +54,10 @@ DOMAIN-SUFFIX,byteintlapi.com
 DOMAIN-SUFFIX,itobsnssdk.com
 
 # 中银香港
-PROCESS-NAME,com.bochk.app.aos
 #蚂蚁银行
-PROCESS-NAME,com.alipay.antbank.hk.portal
 # 汇丰香港
-PROCESS-NAME,hk.com.hsbc.hsbchkmobilebanking
 # MOX BANK
 DOMAIN-SUFFIX,mox.com
-PROCESS-NAME,com.mox.app
 
 # 公共DNS直连
 DOMAIN,dns.alidns.com
@@ -122,24 +118,6 @@ DST-PORT,9995
 SRC-PORT,9995
 IP-CIDR,192.200.0.0/24,no-resolve
 IP-CIDR6,2606:B740:49::/48,no-resolve
-PROCESS-NAME,zerotier
-PROCESS-NAME,zerotier-one
-PROCESS-NAME,zerotier-cli
-PROCESS-NAME,zerotier-one_x64.exe
-PROCESS-NAME,tailscale
-PROCESS-NAME,tailscaled
-PROCESS-NAME,tailscale.exe
-PROCESS-NAME,tailscaled.exe
-PROCESS-NAME,tailscale-ipn
-PROCESS-NAME,tailscale-ipn.exe
-PROCESS-NAME,Tailscale
-PROCESS-NAME,Tailscale Service
-PROCESS-NAME,Tailscale.exe
-PROCESS-NAME,Tailscale Service.exe
-PROCESS-NAME,easytier-gui.exe
-PROCESS-NAME,easytier
-PROCESS-NAME,easytier-cli
-PROCESS-NAME,eztest
 # 一些影视站
 DOMAIN-SUFFIX,sbzyplay.com
 DOMAIN-SUFFIX,v6.pub
@@ -190,8 +168,6 @@ DOMAIN-SUFFIX,z100.vip
 DOMAIN-SUFFIX,pttime.org
 DOMAIN-SUFFIX,hitpt.com
 DOMAIN-SUFFIX,tjupt.org
-PROCESS-NAME,qbittorrent
-PROCESS-NAME,transmission
 # 镜像网站
 DOMAIN-SUFFIX,mirror.ghproxy.com
 DOMAIN-SUFFIX,hub.fgit.mxtrans.net
@@ -225,25 +201,6 @@ DOMAIN-KEYWORD,IPV6-Test
 DOMAIN-KEYWORD,IPV6Test
 DOMAIN-KEYWORD,Test-IPV6
 DOMAIN-KEYWORD,TestIPV6
-PROCESS-NAME,BitComet
-PROCESS-NAME,NetTransport
-PROCESS-NAME,qbittorrent
-PROCESS-NAME,Thunder
-PROCESS-NAME,transmission-daemon
-PROCESS-NAME,transmission-qt
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,qbittorrent
-PROCESS-NAME,Thunder
-PROCESS-NAME,Transmission
-PROCESS-NAME,transmission
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
-PROCESS-NAME,leigod
-PROCESS-NAME,leigod.exe
 IP-CIDR,45.137.180.230/32,no-resolve
 # 其他VPS
 # 喵云CN

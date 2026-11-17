@@ -1,8 +1,6 @@
 # WindowsStore
 DOMAIN-REGEX,^.*store.*microsoft\.com$
 DOMAIN-REGEX,^[^.]*store[^.]*\.[^.]*\.*microsoft\.com$
-PROCESS-NAME,WinStore.APP.exe
-PROCESS-NAME,WinStore.APP
 
 # office等高ip要求
 DOMAIN-SUFFIX,msftauth.net

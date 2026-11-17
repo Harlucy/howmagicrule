@@ -7,7 +7,6 @@ DOMAIN-SUFFIX,colocrossing.com
 DOMAIN-SUFFIX,engagement.ai
 DOMAIN-SUFFIX,revved.com
 DOMAIN-SUFFIX,qontak.com
-PROCESS-NAME,transferwise
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,moscwise.com
 DOMAIN-KEYWORD,transferwise
@@ -16,12 +15,10 @@ DOMAIN-SUFFIX,events.launchdarkly.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,braze.com
 DOMAIN-SUFFIX,kraken.com
-PROCESS-NAME,com.kraken.trade
 DOMAIN-SUFFIX,vote.gov
 DOMAIN-SUFFIX,reshot.ai
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,ultramobile.com
-PROCESS-NAME,com.uvnv.ultramobile
 DOMAIN-SUFFIX,att.com
 DOMAIN-KEYWORD,voice.google
 DOMAIN-KEYWORD,voice.telephony
@@ -63,7 +60,6 @@ DOMAIN-SUFFIX,tktn.be
 DOMAIN-SUFFIX,vm.talkatone.com
 DOMAIN-SUFFIX,tenor.com
 DOMAIN-SUFFIX,talkatone.com
-PROCESS-NAME,com.talkatone.android
 DOMAIN-SUFFIX,agkn.com
 DOMAIN-SUFFIX,cohere.com
 DOMAIN-SUFFIX,crashlytics.com
@@ -83,7 +79,6 @@ DOMAIN-SUFFIX,goo.gle
 DOMAIN-SUFFIX,one.google.com
 
 # Paypal补充
-PROCESS-NAME,com.paypal.android.p2pmobile
 
 # US EDU
 DOMAIN-SUFFIX,liberty.edu
