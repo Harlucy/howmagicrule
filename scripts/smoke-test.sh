@@ -18,7 +18,7 @@ for s in $LINKS; do
   groups=$(awk '/^proxy-groups:/{f=1;next} /^(rules|rule-providers):/{f=0} f&&/^  - name:/{c++} END{print c+0}' "$f")
   rules=$(awk '/^rules:/{f=1;next} f&&/^  - /{c++} END{print c+0}' "$f")
   liuzi=$(grep -c '美国留子高质' "$f" || true)
-  fish=$(awk '/^  - name: 🐟 漏网之鱼/{f=1} f{print;c++} c>3{exit}' "$f" | sed -n '3p' | sed 's/^ *- //')
+  fish=$(awk '/^  - name: 🐟 漏网之鱼/{f=1} f{print;c++} c>4{exit}' "$f" | sed -n '4p' | sed 's/^ *- //')
   printf "%-8s http=%s nodes=%-3s groups=%-3s rules=%-5s 留子=%s 漏网首=%s\n" "$s" "$code" "$nodes" "$groups" "$rules" "$liuzi" "$fish"
   [ "$nodes" -lt 40 ] && { echo "  WARN nodes too few"; FAIL=1; }
   [ "$liuzi" -lt 1 ] && { echo "  WARN 留子 missing"; FAIL=1; }
