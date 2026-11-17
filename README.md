@@ -16,7 +16,6 @@
 | `clash-rule-black.ini` | 黑名单模式 |
 | `clash-rule-general.ini` | 通用精简配置 |
 | `clash-rule-manual.ini` | 手工调整版本 |
-| `clash-rule-black-manual.ini` | 黑名单手工调整版本 |
 | `clash-rule-manual-test.ini` | 手工规则测试版本 |
 | `clash-rule-ad.ini` | 默认规则 + 广告拦截（`ADDRejectLite`），由 `config/upstream-sync.json` 的 `derived_ini` 生成 |
 
