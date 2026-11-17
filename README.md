@@ -12,15 +12,10 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| `clash-rule.ini` | 默认规则配置 |
-| `clash-rule-black.ini` | 黑名单模式 |
-| `clash-rule-general.ini` | 通用精简配置 |
-| `clash-rule-manual.ini` | 手工调整版本 |
-| `clash-rule-manual-test.ini` | 手工规则测试版本 |
-| `clash-rule-ad.ini` | 默认规则 + 广告拦截（`ADDRejectLite`），由 `config/upstream-sync.json` 的 `derived_ini` 生成 |
+| `clash-rule.ini` | 唯一的规则配置（50 组 / 48 ruleset，漏网走「🚄 本地直连」） |
 
-`clash-rule-ad.ini` 不是手工维护的文件：`scripts/sync-upstream.py` 每次同步或 `--local-only`
-都会用 `clash-rule.ini` 重新生成它，只多一行 `ADDRejectLite` 规则集，其余内容与默认入口保持一致。
+广告拦截不再走 INI：`clash-rule-ad.ini` 与 `ADDRejectLite` 已下线，改在 DNS 层用 AdGuard Home，
+方案见 `homelab/plans/home-router-pve-plan.md` 的「DNS 分层」一节。
 
 例如，使用订阅转换服务时，将下列编码后的地址作为规则配置地址：
 

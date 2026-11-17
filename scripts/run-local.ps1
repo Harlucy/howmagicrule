@@ -5,7 +5,7 @@
 .DESCRIPTION
   等价于 GitHub Actions 的 Rule-Update + Convert，但不重跑几十个外部下载步骤：
   规则新鲜度继承上游仓库（上游 CI 每 6 小时提交 rules/*.list）。
-  只在本地重建派生的 clash-rule-ad.ini 与全部 YAML，然后给出改动概览。
+  只在本地重建全部 YAML，然后给出改动概览。
 
 .EXAMPLE
   pwsh scripts/run-local.ps1
