@@ -35,3 +35,8 @@ DOMAIN-REGEX,.*\.mcdn\.bilivideo\.(com|cn|net)$
 DOMAIN-SUFFIX,buychennai.com
 DOMAIN-SUFFIX,pages-gist.com
 
+# Local additions: A-ForcedReject.MANUAL.list
+DOMAIN,btrace.qq.com
+DOMAIN,btrace.video.qq.com
+DOMAIN,mta.qq.com
+DOMAIN,apm.qq.com

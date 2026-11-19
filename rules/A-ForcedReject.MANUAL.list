@@ -34,3 +34,8 @@ DOMAIN-REGEX,.*\.mcdn\.bilivideo\.(com|cn|net)$
 # 安全风险
 DOMAIN-SUFFIX,buychennai.com
 DOMAIN-SUFFIX,pages-gist.com
+# 已废弃埋点：域名所有者自己把 A 记录指向 0.0.0.1，直连必报 unreachable（只会刷 warning）
+DOMAIN,btrace.qq.com
+DOMAIN,btrace.video.qq.com
+DOMAIN,mta.qq.com
+DOMAIN,apm.qq.com
