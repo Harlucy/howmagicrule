@@ -8,3 +8,14 @@ payload:
  - DOMAIN-SUFFIX,deepseek.com
  - DOMAIN-SUFFIX,moonshot.cn
  - DOMAIN-SUFFIX,dashscope.aliyuncs.com
+ - DOMAIN-SUFFIX,bigmodel.cn
+ - DOMAIN-SUFFIX,zhipuai.cn
+ - DOMAIN-SUFFIX,baichuan-ai.com
+ - DOMAIN-SUFFIX,hunyuan.tencent.com
+ - DOMAIN-SUFFIX,sensecore.io
+ - DOMAIN-SUFFIX,stepfun.com
+ - DOMAIN-SUFFIX,minimaxi.com
+ - DOMAIN-SUFFIX,lingyiwanwu.com
+ - DOMAIN-SUFFIX,modelbest.cn
+ - DOMAIN-SUFFIX,xfyun.cn
+ - DOMAIN-SUFFIX,volces.com
