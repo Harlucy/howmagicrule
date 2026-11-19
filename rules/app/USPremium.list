@@ -1,0 +1,15 @@
+# 美国高质（💖 美国高质 fallback：🎩 高质节点 -> 🇺🇸 美国节点 -> 🇺🇸 美国公共过境）
+# TikTok：与 PROCESS-NAME,com.zhiliaoapp.musically 同组
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,sgsnssdk.com
+DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,ttwebview.com
