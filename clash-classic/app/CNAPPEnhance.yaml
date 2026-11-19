@@ -285,3 +285,6 @@ payload:
  - DOMAIN-SUFFIX,qianxin.com
  - DOMAIN-SUFFIX,hihonor.com
  - DOMAIN-SUFFIX,newfind.vivo.com
+ - DOMAIN-SUFFIX,deepseek.com
+ - DOMAIN-SUFFIX,moonshot.cn
+ - DOMAIN-SUFFIX,dashscope.aliyuncs.com

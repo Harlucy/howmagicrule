@@ -40,8 +40,5 @@ DOMAIN-SUFFIX,llmsresearch.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
 
-# 聚合 AI 客户端（Jev助手 com.jev.probe / 美好生活 com.betterlife.app）
-DOMAIN-SUFFIX,deepseek.com
-DOMAIN-SUFFIX,moonshot.cn
+# 聚合 AI 客户端（Jev助手 / 美好生活）：国内模型 API 已移到 CNAPPEnhance 直连
 DOMAIN-SUFFIX,openrouter.ai
-DOMAIN-SUFFIX,dashscope.aliyuncs.com

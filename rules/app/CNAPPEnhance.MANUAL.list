@@ -161,3 +161,8 @@ DOMAIN-SUFFIX,wetype.weixin.qq.com
 DOMAIN-SUFFIX,qianxin.com
 DOMAIN-SUFFIX,hihonor.com
 DOMAIN-SUFFIX,newfind.vivo.com
+
+# 国内 AI 服务（直连；原先误放在 ALLINAI-HQ，会绕美国）
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,dashscope.aliyuncs.com
