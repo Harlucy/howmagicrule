@@ -61,7 +61,7 @@ dns:
   use-hosts: true
   use-system-hosts: true
   respect-rules: false
-  listen: 0.0.0.0:5353
+  listen: 127.0.0.1:5353
   enhanced-mode: fake-ip
   nameserver-policy:
     'geosite:googlefcm': 
@@ -77,15 +77,11 @@ dns:
       - https://doh.pub/dns-query
       - https://doh.360.cn
     '+.icu':
-      - https://v.recipes/dns/dns.google/dns-query
-      - https://dns.google/dns-query
-      - https://1.1.1.1/dns-query
-      - https://ld.ddd.oaifree.com/query-dns
+      - "https://dns.google/dns-query#🚀 主要代理"
+      - "https://1.1.1.1/dns-query#🚀 主要代理"
     'geosite:gfw':
-      - https://v.recipes/dns/dns.google/dns-query
-      - https://dns.google/dns-query
-      - https://1.1.1.1/dns-query
-      - https://ld.ddd.oaifree.com/query-dns
+      - "https://dns.google/dns-query#🚀 主要代理"
+      - "https://1.1.1.1/dns-query#🚀 主要代理"
   default-nameserver:
     - 114.114.114.114
     - 218.30.118.6
@@ -94,8 +90,7 @@ dns:
   proxy-server-nameserver:
     - https://223.6.6.6/dns-query
     - https://doh.pub/dns-query
-    - https://v.recipes/dns/dns.google/dns-query
-    - https://ld.ddd.oaifree.com/query-dns
+    - https://doh.360.cn
   direct-nameserver:
     - https://223.6.6.6/dns-query
     - https://doh.pub/dns-query
@@ -106,12 +101,10 @@ dns:
     - https://doh.pub/dns-query
     - https://doh.360.cn
   fallback:
-    - https://v.recipes/dns/dns.google/dns-query
-    - https://dns.google/dns-query
-    - https://1.1.1.1/dns-query
-    - https://ld.ddd.oaifree.com/query-dns
+    - "https://dns.google/dns-query#🚀 主要代理"
+    - "https://1.1.1.1/dns-query#🚀 主要代理"
   fallback-filter:
-    geoip: false
+    geoip: true
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
