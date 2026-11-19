@@ -228,3 +228,7 @@ DOMAIN-SUFFIX,discourse.org
 # Speedtest（与 PROCESS-NAME 同步：org.zwanoo.android.speedtest -> 🚀 主要代理）
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,ookla.com
+
+# 新购美机 204.202.1.0/24 / 104.233.229.0/24
+IP-CIDR,204.202.1.0/24,no-resolve
+IP-CIDR,104.233.229.0/24,no-resolve
