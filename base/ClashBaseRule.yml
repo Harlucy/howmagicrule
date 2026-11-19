@@ -41,19 +41,18 @@ tun:
     - "any:53"
     - "tcp://any:53"
   route-exclude-address:
+    - 10.0.0.0/8
     - 172.16.0.0/12
+    - 192.168.0.0/16
+    - 100.64.0.0/10
     - 169.254.0.0/16
+    - 127.0.0.0/8
     - 224.0.0.0/4
     - 255.255.255.255/32
+    - ::1/128
     - fe80::/10
+    - fc00::/7
     - ff00::/8
-    - 192.168.49.0/24
-    - 192.168.110.0/24
-    - 192.168.191.0/24
-    - 192.168.192.0/24
-    - 100.64.0.0/10
-    - 10.14.14.0/24
-    - 10.14.12.0/24
 dns:
   enable: true
   ipv6: true
@@ -132,9 +131,17 @@ dns:
     - '+.stun.*.*.*.*'
     - '+.stun.*.*.*.*.*'
     - '*.lan'
+    - '+.lan'
     - '*.local'
+    - '+.local'
     - '*.localdomain'
+    - '+.localdomain'
     - '*.localhost'
+    - '+.localhost'
+    - '*.home.arpa'
+    - '+.home.arpa'
+    - '*.internal'
+    - '+.internal'
     - '+.battlenet.com.cn'
     - '+.cfprefer1.xyz'
     - '+.cmbchina.com'
