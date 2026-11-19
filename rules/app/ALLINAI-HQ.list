@@ -95,5 +95,5 @@ DOMAIN-SUFFIX,llmsresearch.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
 
-# Local additions: ALLINAI-HQ.MANUAL.list
+# 聚合 AI 客户端（Jev助手 / 美好生活）：国内模型 API 已移到 CNAPPEnhance 直连
 DOMAIN-SUFFIX,openrouter.ai

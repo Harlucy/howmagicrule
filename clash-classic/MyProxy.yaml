@@ -64,6 +64,7 @@ payload:
  - DOMAIN-SUFFIX,dalao.net
  - DOMAIN-SUFFIX,darkreader.org
  - DOMAIN-SUFFIX,deeplx.org
+ - DOMAIN-SUFFIX,discourse.org
  - DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
  - DOMAIN-SUFFIX,docker.com
  - DOMAIN-SUFFIX,docker.io
@@ -156,6 +157,7 @@ payload:
  - DOMAIN-SUFFIX,nvidia.com
  - DOMAIN-SUFFIX,ollama.ai
  - DOMAIN-SUFFIX,ollama.com
+ - DOMAIN-SUFFIX,ookla.com
  - DOMAIN-SUFFIX,ooklaserver.net
  - DOMAIN-SUFFIX,oracle
  - DOMAIN-SUFFIX,oracle.com
@@ -193,6 +195,7 @@ payload:
  - DOMAIN-SUFFIX,shared.oaifree.com
  - DOMAIN-SUFFIX,shucdn.com
  - DOMAIN-SUFFIX,siliconflow.com
+ - DOMAIN-SUFFIX,speedtest.net
  - DOMAIN-SUFFIX,stables.money
  - DOMAIN-SUFFIX,starryblu.com
  - DOMAIN-SUFFIX,sun.com
@@ -228,6 +231,3 @@ payload:
  - IP-CIDR,85.155.177.0/24,no-resolve
  - DOMAIN,eu1.workspace.org
  - IP-CIDR,193.108.130.81/32,no-resolve
- - DOMAIN-SUFFIX,discourse.org
- - DOMAIN-SUFFIX,speedtest.net
- - DOMAIN-SUFFIX,ookla.com

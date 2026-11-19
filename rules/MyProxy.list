@@ -8,6 +8,7 @@
 # DOMAIN-SUFFIX: 5
 # DOMAIN: 1
 # DOMAIN: 3
+# Discourse 客户端（与 PROCESS-NAME 同步：com.discourse -> 🚀 主要代理）
 # MINIMAX/海螺AI
 # NAME: Docker
 # NAME: Notion
@@ -16,6 +17,7 @@
 # Other
 # QwenLLMAI
 # REPO: https://github.com/blackmatrix7/ios_rule_script
+# Speedtest（与 PROCESS-NAME 同步：org.zwanoo.android.speedtest -> 🚀 主要代理）
 # Starryblu熊猫速汇
 # TOTAL: 25
 # TOTAL: 6
@@ -96,6 +98,7 @@ DOMAIN-SUFFIX,cybermania.ws
 DOMAIN-SUFFIX,dalao.net
 DOMAIN-SUFFIX,darkreader.org
 DOMAIN-SUFFIX,deeplx.org
+DOMAIN-SUFFIX,discourse.org
 DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
@@ -188,6 +191,7 @@ DOMAIN-SUFFIX,ntdm9.com
 DOMAIN-SUFFIX,nvidia.com
 DOMAIN-SUFFIX,ollama.ai
 DOMAIN-SUFFIX,ollama.com
+DOMAIN-SUFFIX,ookla.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,oracle
 DOMAIN-SUFFIX,oracle.com
@@ -225,6 +229,7 @@ DOMAIN-SUFFIX,sda1.dev
 DOMAIN-SUFFIX,shared.oaifree.com
 DOMAIN-SUFFIX,shucdn.com
 DOMAIN-SUFFIX,siliconflow.com
+DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,stables.money
 DOMAIN-SUFFIX,starryblu.com
 DOMAIN-SUFFIX,sun.com
@@ -262,10 +267,3 @@ IP-CIDR,85.155.177.0/24,no-resolve  # 韩国 KT（KT 家宽落地）
 # DNS Resolved: eu1.workspace.org
 DOMAIN,eu1.workspace.org
 IP-CIDR,193.108.130.81/32,no-resolve
-
-# Local additions: MyProxy.MANUAL.list
-DOMAIN-SUFFIX,discourse.org
-
-# Local additions: MyProxy.MANUAL.list
-DOMAIN-SUFFIX,speedtest.net
-DOMAIN-SUFFIX,ookla.com
