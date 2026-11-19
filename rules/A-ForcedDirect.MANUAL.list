@@ -47,7 +47,6 @@ DOMAIN-SUFFIX,fcs-keys-pub-prod.cdn-apple.com
 DOMAIN-SUFFIX,time.asia.apple.com
 
 # 字节跳动海外业务及遥测
-DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,byteintl.com
 DOMAIN-SUFFIX,byteintlapi.com

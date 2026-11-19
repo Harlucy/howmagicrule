@@ -1,0 +1,7 @@
+# Bitwarden（与 PROCESS-NAME 同步：com.x8bit.bitwarden -> 🍀 香港应用）
+DOMAIN-SUFFIX,bitwarden.com
+DOMAIN-SUFFIX,bitwarden.eu
+DOMAIN-SUFFIX,bitwarden.net
+DOMAIN-SUFFIX,bitwarden-gov.com
+DOMAIN-SUFFIX,pwnedpasswords.com
+DOMAIN,passwd.iswsh.com

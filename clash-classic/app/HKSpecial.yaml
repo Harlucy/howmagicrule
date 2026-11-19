@@ -1,2 +1,8 @@
 payload:
  - DOMAIN-SUFFIX,tampermonkey.net
+ - DOMAIN-SUFFIX,bitwarden.com
+ - DOMAIN-SUFFIX,bitwarden.eu
+ - DOMAIN-SUFFIX,bitwarden.net
+ - DOMAIN-SUFFIX,bitwarden-gov.com
+ - DOMAIN-SUFFIX,pwnedpasswords.com
+ - DOMAIN,passwd.iswsh.com

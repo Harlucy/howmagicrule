@@ -210,3 +210,6 @@ payload:
  - DOMAIN-SUFFIX,v2.uhdnow.com
  - DOMAIN-SUFFIX,global.uhdnow.com
  - DOMAIN-SUFFIX,rfc.uhdnow.com
+ - DOMAIN-SUFFIX,assrt.net
+ - DOMAIN-SUFFIX,opensubtitles.com
+ - DOMAIN-SUFFIX,dandanplay.net

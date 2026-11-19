@@ -1,2 +1,8 @@
 # Bilibili 全球站
 
+# Local additions: BiliBiliGlo.MANUAL.list
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,b23.tv
+DOMAIN-SUFFIX,biliapi.net

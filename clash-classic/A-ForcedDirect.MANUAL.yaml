@@ -27,7 +27,6 @@ payload:
  - DOMAIN-SUFFIX,wkms-public.apple.com
  - DOMAIN-SUFFIX,fcs-keys-pub-prod.cdn-apple.com
  - DOMAIN-SUFFIX,time.asia.apple.com
- - DOMAIN-SUFFIX,byteoversea.com
  - DOMAIN-SUFFIX,bytedapm.com
  - DOMAIN-SUFFIX,byteintl.com
  - DOMAIN-SUFFIX,byteintlapi.com

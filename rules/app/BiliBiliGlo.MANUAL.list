@@ -1,1 +1,8 @@
 # Bilibili 全球站
+
+# JKVideo / B站（与 PROCESS-NAME 同步：com.anonymous.jkvideo -> 📺 B站国际）
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,b23.tv
+DOMAIN-SUFFIX,biliapi.net

@@ -58,3 +58,7 @@ IP-CIDR6,2402:4e00:c050::/48,no-resolve
 DOMAIN-SUFFIX,appkcc.com
 DOMAIN-SUFFIX,lanzou.com
 DOMAIN-SUFFIX,ilanzou.com
+
+# Speedtest（与 PROCESS-NAME 同步：org.zwanoo.android.speedtest -> 🚄 本地直连）
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,ookla.com

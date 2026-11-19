@@ -221,3 +221,6 @@ DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,changshenglou.com
 IP-CIDR,85.155.177.0/24,no-resolve  # 韩国 KT（KT 家宽落地）
+
+# Discourse 客户端（与 PROCESS-NAME 同步：com.discourse -> 🚀 主要代理）
+DOMAIN-SUFFIX,discourse.org

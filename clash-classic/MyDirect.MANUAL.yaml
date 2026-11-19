@@ -49,3 +49,5 @@ payload:
  - DOMAIN-SUFFIX,appkcc.com
  - DOMAIN-SUFFIX,lanzou.com
  - DOMAIN-SUFFIX,ilanzou.com
+ - DOMAIN-SUFFIX,speedtest.net
+ - DOMAIN-SUFFIX,ookla.com
