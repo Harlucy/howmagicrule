@@ -265,3 +265,7 @@ IP-CIDR,193.108.130.81/32,no-resolve
 
 # Local additions: MyProxy.MANUAL.list
 DOMAIN-SUFFIX,discourse.org
+
+# Local additions: MyProxy.MANUAL.list
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,ookla.com

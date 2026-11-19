@@ -124,3 +124,17 @@ IP-CIDR6,2a12:bec0:161:a007::/64,no-resolve
 IP-CIDR6,2602:f92a:101::/48,no-resolve  # 荔枝/LAX v6
 IP-CIDR,103.11.79.0/24,no-resolve
 
+# TikTok（与 PROCESS-NAME 同步：com.zhiliaoapp.musically -> 🗽 美国应用）
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,tiktokv.us
+DOMAIN-SUFFIX,tiktokw.us
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokcdn-us.com
+DOMAIN-SUFFIX,muscdn.com
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
+DOMAIN-SUFFIX,isnssdk.com
+DOMAIN-SUFFIX,sgsnssdk.com
+DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,ttwebview.com
