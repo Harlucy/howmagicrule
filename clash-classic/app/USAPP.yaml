@@ -186,6 +186,7 @@ payload:
  - DOMAIN-SUFFIX,thegithubshop.com
  - DOMAIN-KEYWORD,github
  - DOMAIN-KEYWORD,anthropic
+ - DOMAIN-KEYWORD,antigravity
  - DOMAIN-KEYWORD,claude
  - DOMAIN-KEYWORD,openai
  - DOMAIN,ai.google.dev
@@ -197,7 +198,10 @@ payload:
  - DOMAIN,console.groq.com
  - DOMAIN,copilot-proxy.githubusercontent.com
  - DOMAIN,gemini.google.com
+ - DOMAIN,geminiweb-pa.clients.google.com
+ - DOMAIN,geminiweb-pa.clients6.google.com
  - DOMAIN,generativelanguage.googleapis.com
+ - DOMAIN,notebooklm-pa.googleapis.com
  - DOMAIN,notebooklm.google.com
  - DOMAIN,sydney.bing.com
  - DOMAIN-SUFFIX,ai.azure.com
@@ -205,6 +209,7 @@ payload:
  - DOMAIN-SUFFIX,auth0.com
  - DOMAIN-SUFFIX,bard.google.com
  - DOMAIN-SUFFIX,chatgpt.com
+ - DOMAIN-SUFFIX,clau.de
  - DOMAIN-SUFFIX,claude.ai
  - DOMAIN-SUFFIX,claude.com
  - DOMAIN-SUFFIX,claudeusercontent.com
