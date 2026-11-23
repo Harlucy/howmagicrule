@@ -74,3 +74,4 @@ payload:
  - DOMAIN-SUFFIX,zjdx.4444442.xyz
  - IP-CIDR,192.168.0.0/16,no-resolve
  - IP-CIDR6,2402:4e00:c050::/48,no-resolve
+ - DOMAIN-SUFFIX,cip.cc

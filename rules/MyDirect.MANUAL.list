@@ -58,4 +58,6 @@ IP-CIDR6,2402:4e00:c050::/48,no-resolve
 DOMAIN-SUFFIX,appkcc.com
 DOMAIN-SUFFIX,lanzou.com
 DOMAIN-SUFFIX,ilanzou.com
+# cip.cc 查出口 IP，必须直连
+DOMAIN-SUFFIX,cip.cc
 

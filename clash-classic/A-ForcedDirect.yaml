@@ -166,7 +166,6 @@ payload:
  - DOMAIN,sub.lululucy.top
  - DOMAIN,forge.lululucy.top
  - DOMAIN,conv.lululucy.top
- - DOMAIN,acode.lululucy.top
  - AND,((DOMAIN-SUFFIX,9b533fd3904d7f633a97.thisgourl.xyz),(OR,((DST-PORT,57031),(SRC-PORT,57031))))
  - AND,((DOMAIN-SUFFIX,avrku8ft-1v9il19zydga0iv7.awstrack.vip),(OR,((DST-PORT,60000),(SRC-PORT,60000))))
  - AND,((DOMAIN-SUFFIX,avrku8ft-1v9il19zydga0iv7.awstrack.vip),(OR,((DST-PORT,60001),(SRC-PORT,60001))))
@@ -1969,3 +1968,4 @@ payload:
  - AND,((IP-CIDR6,2606:4700:57:406a:8fdb:726:3e79:9d05/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
  - AND,((IP-CIDR6,2a05:d014:1984:2e00:a8f2:e3fb:5c2b:5577/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
  - AND,((IP-CIDR6,2a05:d01c:a32:fe00:dffe:4c17:9077:468b/128,no-resolve),(OR,((DST-PORT,443),(SRC-PORT,443))))
+ - DOMAIN,acode.lululucy.top
