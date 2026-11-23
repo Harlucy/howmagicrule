@@ -10,6 +10,7 @@
 # TOTAL: 13
 # UPDATED: 2025-06-06 09:17:47
 # UPDATED: 2025-06-06 09:18:50
+# cip.cc 查出口 IP，必须直连
 # 三星应用商店
 # 兜底LAN
 # 其他
@@ -30,6 +31,7 @@ DOMAIN-SUFFIX,ati.com
 DOMAIN-SUFFIX,autodl.art
 DOMAIN-SUFFIX,autodl.com
 DOMAIN-SUFFIX,bvvvvvvv7f.com
+DOMAIN-SUFFIX,cip.cc
 DOMAIN-SUFFIX,cloudcone.com.cn
 DOMAIN-SUFFIX,cn.ntp.org.cn
 DOMAIN-SUFFIX,cup.com.cn
@@ -92,6 +94,3 @@ DOMAIN-SUFFIX,xterminal.cn
 DOMAIN-SUFFIX,zjdx.4444442.xyz
 IP-CIDR,192.168.0.0/16,no-resolve
 IP-CIDR6,2402:4e00:c050::/48,no-resolve
-
-# Local additions: MyDirect.MANUAL.list
-DOMAIN-SUFFIX,cip.cc
