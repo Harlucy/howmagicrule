@@ -31,7 +31,6 @@
 # read
 # 七牛云东南亚
 # 常用论文投稿
-# 新购美机 204.202.1.0/24 / 104.233.229.0/24
 # 硅基流动国际站
 # 腾讯云国际
 AND,((IP-ASN,31898),(NOT,((GEOIP,CN))))
@@ -270,5 +269,3 @@ DOMAIN,eu1.workspace.org
 IP-CIDR,193.108.130.81/32,no-resolve
 
 # Local additions: MyProxy.MANUAL.list
-IP-CIDR,204.202.1.0/24,no-resolve
-IP-CIDR,104.233.229.0/24,no-resolve

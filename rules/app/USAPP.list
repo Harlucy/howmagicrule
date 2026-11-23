@@ -419,3 +419,7 @@ DOMAIN-SUFFIX,isnssdk.com
 DOMAIN-SUFFIX,sgsnssdk.com
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,ttwebview.com
+
+# Local additions: USAPP.MANUAL.list
+IP-CIDR,104.233.229.0/24,no-resolve
+IP-CIDR,204.202.1.0/24,no-resolve
