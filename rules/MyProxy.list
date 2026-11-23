@@ -268,3 +268,7 @@ IP-CIDR,85.155.177.0/24,no-resolve  # 韩国 KT（KT 家宽落地）
 # DNS Resolved: eu1.workspace.org
 DOMAIN,eu1.workspace.org
 IP-CIDR,193.108.130.81/32,no-resolve
+
+# Local additions: MyProxy.MANUAL.list
+IP-CIDR,204.202.1.0/24,no-resolve
+IP-CIDR,104.233.229.0/24,no-resolve

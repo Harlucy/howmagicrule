@@ -2016,6 +2016,3 @@ AND,((IP-CIDR6,2a05:d01c:a32:fe00:dffe:4c17:9077:468b/128,no-resolve),(OR,((DST-
 
 # Local additions: A-ForcedDirect.MANUAL.list
 DOMAIN,acode.lululucy.top
-IP-CIDR,104.233.229.0/24,no-resolve
-IP-CIDR,204.202.1.0/24,no-resolve
-IP-CIDR,10.222.48.0/23,no-resolve
