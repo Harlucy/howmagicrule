@@ -229,6 +229,5 @@ DOMAIN-SUFFIX,discourse.org
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,ookla.com
 
-# 新购美机 204.202.1.0/24 / 104.233.229.0/24
-IP-CIDR,204.202.1.0/24,no-resolve
-IP-CIDR,104.233.229.0/24,no-resolve
+# 204/104 网段已移到 A-ForcedDirect（直连）：这两台既是节点入口又是 acode 站点，
+# 放这里等于让「访问自己节点」的流量再走一次代理（本机→104→204→104 绕圈）。
