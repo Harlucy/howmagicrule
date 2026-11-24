@@ -24,7 +24,7 @@ IP-CIDR,151.244.134.0/24,no-resolve
 # LazyCat jpkddi
 IP-CIDR,131.143.214.0/24,no-resolve
 
-# Local additions: JPAPP.MANUAL.list
+# Lark / 飞书国际版（走日本）
 DOMAIN-SUFFIX,larksuite.com
 DOMAIN-SUFFIX,larksuitecdn.com
 DOMAIN-SUFFIX,larksuiteimg.com
@@ -42,3 +42,4 @@ DOMAIN-SUFFIX,larkofficecdn.com
 DOMAIN-SUFFIX,larkofficeimg.com
 DOMAIN-SUFFIX,larkofficepkg.com
 DOMAIN-SUFFIX,statuslarkoffice.com
+
