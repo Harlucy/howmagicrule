@@ -24,3 +24,21 @@ IP-CIDR,151.244.134.0/24,no-resolve
 # LazyCat jpkddi
 IP-CIDR,131.143.214.0/24,no-resolve
 
+# Local additions: JPAPP.MANUAL.list
+DOMAIN-SUFFIX,larksuite.com
+DOMAIN-SUFFIX,larksuitecdn.com
+DOMAIN-SUFFIX,larksuiteimg.com
+DOMAIN-SUFFIX,larksuiteimg-boe.com
+DOMAIN-SUFFIX,larksuiteimg-pre.com
+DOMAIN-SUFFIX,larksuiteimgboe.com
+DOMAIN-SUFFIX,larksuiteimgpre.com
+DOMAIN-SUFFIX,larksuitepre.com
+DOMAIN-SUFFIX,larksuite-marketing.com
+DOMAIN-SUFFIX,larksuite.com.ttdns1.com
+DOMAIN-SUFFIX,larksuite.com.ttdns2.com
+DOMAIN-SUFFIX,larkoffice.com
+DOMAIN-SUFFIX,larkofficeapp.com
+DOMAIN-SUFFIX,larkofficecdn.com
+DOMAIN-SUFFIX,larkofficeimg.com
+DOMAIN-SUFFIX,larkofficepkg.com
+DOMAIN-SUFFIX,statuslarkoffice.com
