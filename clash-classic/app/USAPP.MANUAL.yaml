@@ -115,3 +115,4 @@ payload:
  - DOMAIN-SUFFIX,ttwebview.com
  - IP-CIDR,104.233.229.0/24,no-resolve
  - IP-CIDR,204.202.1.0/24,no-resolve
+ - DOMAIN-SUFFIX,2fa.run

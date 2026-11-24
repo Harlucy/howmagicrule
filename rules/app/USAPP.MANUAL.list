@@ -141,3 +141,5 @@ DOMAIN-SUFFIX,ttwebview.com
 # 104/204 节点网段：IP 访问＝SSH，必须经 mihomo 出去（防暴露，不能直连）；目标是美国，走美国应用组
 IP-CIDR,104.233.229.0/24,no-resolve
 IP-CIDR,204.202.1.0/24,no-resolve
+# 2FA 工具站（走美国）
+DOMAIN-SUFFIX,2fa.run
